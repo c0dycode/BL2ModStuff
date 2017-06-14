@@ -250,5 +250,6 @@ set Transient.SparkServiceConfiguration_6 Values ("Grass_Lynchwood_P,GD_Populati
 
 If there are any mistakes feel free to hit me up on shadow's discord (c0dycode) :)
 
-Thanks to Shadow's Patch and Discord-Community
+Thanks to Shadow's Patch and Discord-Community.
+
 Especially the_Nocturni who explained it, also Mike and EarthAries who started that conversation where I could get most of the infos from :P
