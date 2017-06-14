@@ -1,4 +1,4 @@
-# 1.Find the Lootpool of the specific enemy you want to modify.
+# 1. Find the Lootpool of the specific enemy you want to modify.
 
 Move to the area the enemy spawns in and enter this into the console:
 getall AIPawnBalanceDefinition Name
@@ -23,6 +23,8 @@ DefaultItemPoolList(0)=(ItemPool=ItemPoolDefinition'GD_Sheriff.WeaponPools.Pool_
 DefaultItemPoolList(1)=(ItemPool=ItemPoolDefinition'GD_ItempoolsEnemyUse.Shields.Pool_Shields_Standard_EnemyUse',PoolProbability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000))
 DefaultItemPoolList(2)=(ItemPool=ItemPoolDefinition'GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=0.000000,BaseValueAttribute=AttributeDefinition'GD_Itempools.DropWeights.DropODDS_BossUniqueRares',InitializationDefinition=None,BaseValueScaleConstant=1.000000))
 
+# 2. Modify the Lootpool
+
 Since ***DefaultItemPoolList(2)*** is the only one that is not a guaranteed drop everytime, we're going to up the chance a bit.
 
 The simplest way of modifying the drop chance is:
@@ -44,7 +46,7 @@ Let's say we want a guaranteed drop, so let's change
 to
 ***GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=1.000000***
 
-With this method we can only change this if we include all three pools into the command. AFAIK changing specifics only works with hotfixes.
+With this method we can only change this if we include all three pools, that were there by default, into the command. AFAIK changing specifics only works with hotfixes.
 
 For step three, we take another look at the result of "obj dump PawnBalance_Sheriff"
 The orange marked area shows you the execution of the command and the very first line it printed out for us.
