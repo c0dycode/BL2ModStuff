@@ -45,7 +45,8 @@ So we start off our command with
 
 Since we want to modify one of the ***DefaultItemPoolList(x)***, this will be our variable name.
 The syntax is:
-```set <class> <variable> <value>
+```
+set <class> <variable> <value>
 ```
 
 (For more information goto the unrealengine link below)
