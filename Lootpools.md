@@ -1,7 +1,7 @@
 # 1. Find the Lootpool of the specific enemy you want to modify.
 
 Move to the area the enemy spawns in and enter this into the console:
-getall AIPawnBalanceDefinition Name
+***getall AIPawnBalanceDefinition Name***
 
 In this example I'm in Lynchwood at the Travel Station and want to get the "Sheriff"'s Lootpool.
 The command results are the follwing:
