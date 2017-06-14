@@ -6,7 +6,7 @@ getall AIPawnBalanceDefinition Name
 In this example I'm in Lynchwood at the Travel Station and want to get the "Sheriff"'s Lootpool.
 The command results are the follwing:
 
-![Step1](../images/Step1.jpg)
+![Step1](./images/Step1.jpg)
 So we found the "Balance" of the "Sheriff". (marked red)
 We only need the green marked part though.
 
@@ -15,7 +15,7 @@ Now we'll "obj dump" it.
 So in this example:
 "obj dump PawnBalance_Sheriff"
 
-![Step2](../images/Step2.jpg)
+![Step2](./images/Step2.jpg)
 
 For ease of access here's the result we need:
 
