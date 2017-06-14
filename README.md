@@ -6,3 +6,7 @@ Makes it a lot easier for me to copy results without navigating to the log-file.
 
 Example here:
 ![Console.png](./images/Console.png)
+
+# Patch-files do NOT need an extension
+
+Yes, they don't. You can just have a file "patch" in your "Borderlands 2\Binaries\"-folder and you can execute it by typing "exec patch" into the console.
