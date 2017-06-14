@@ -1,4 +1,4 @@
-1.Find the Lootpool of the specific enemy you want to modify.
+# 1.Find the Lootpool of the specific enemy you want to modify.
 
 Move to the area the enemy spawns in and enter this into the console:
 getall AIPawnBalanceDefinition Name
@@ -13,7 +13,7 @@ We only need the green marked part though.
 Now we'll "obj dump" it.
 
 So in this example:
-"obj dump PawnBalance_Sheriff"
+***obj dump PawnBalance_Sheriff***
 
 ![Step2](./images/Step2.jpg)
 
@@ -23,16 +23,16 @@ DefaultItemPoolList(0)=(ItemPool=ItemPoolDefinition'GD_Sheriff.WeaponPools.Pool_
 DefaultItemPoolList(1)=(ItemPool=ItemPoolDefinition'GD_ItempoolsEnemyUse.Shields.Pool_Shields_Standard_EnemyUse',PoolProbability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000))
 DefaultItemPoolList(2)=(ItemPool=ItemPoolDefinition'GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=0.000000,BaseValueAttribute=AttributeDefinition'GD_Itempools.DropWeights.DropODDS_BossUniqueRares',InitializationDefinition=None,BaseValueScaleConstant=1.000000))
 
-Since "DefaultItemPoolList(2)" is the only one that is not a guaranteed drop everytime, we're going to up the chance a bit.
+Since ***DefaultItemPoolList(2)*** is the only one that is not a guaranteed drop everytime, we're going to up the chance a bit.
 
 The simplest way of modifying the drop chance is:
 
-BaseValueConstant*BaseValueScaleConstant=Effective chance for this loot.
+***BaseValueConstant*BaseValueScaleConstant***=Effective chance for this loot.
 
 Let's say we want a guaranteed drop, so let's change 
-"GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=0.000000"
+***GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=0.000000***
 to
-"GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=1.000000"
+***GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=0.200000***
 
 With this method we can only change this if we include all three pools into the command. AFAIK changing specifics only works with hotfixes.
 
@@ -41,15 +41,16 @@ The orange marked area shows you the execution of the command and the very first
 We see the class we need for the command (marked red).
 
 So we start off our command with
-"set GD_Population_Sheriff.Balance.PawnBalance_Sheriff"
+***set GD_Population_Sheriff.Balance.PawnBalance_Sheriff***
 
-Since we want to modify one of the "DefaultItemPoolList(x)", this will be our variable name.
+Since we want to modify one of the ***DefaultItemPoolList(x)***, this will be our variable name.
 The syntax is:
-set <class> <variable> <value>
+```set <class> <variable> <value>
+```
 
 (For more information goto the unrealengine link below)
 
-"set GD_Population_Sheriff.Balance.PawnBalance_Sheriff DefaultItemPoolList"
+***set GD_Population_Sheriff.Balance.PawnBalance_Sheriff DefaultItemPoolList***
 
 We will remove "DefaultItemPoolList(0)=", DefaultItemPoolList(1)= and DefaultItemPoolList(2)= in the command
 since we basically recreate the array with the set-command and the command already knows what we want to set at this point with the command.
@@ -59,7 +60,7 @@ That leaves us with:
 (ItemPool=ItemPoolDefinition'GD_Sheriff.WeaponPools.Pool_Weapons_SheriffPistols_EnemyUse',PoolProbability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000))
 (ItemPool=ItemPoolDefinition'GD_ItempoolsEnemyUse.Shields.Pool_Shields_Standard_EnemyUse',PoolProbability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000))
 (ItemPool=ItemPoolDefinition'GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(
-BaseValueConstant=0.000000,BaseValueAttribute=AttributeDefinition'GD_Itempools.DropWeights.DropODDS_BossUniqueRares',InitializationDefinition=None,BaseValueScaleConstant=1.000000))
+BaseValueConstant=0.200000,BaseValueAttribute=AttributeDefinition'GD_Itempools.DropWeights.DropODDS_BossUniqueRares',InitializationDefinition=None,BaseValueScaleConstant=1.000000))
 
 Add a single "(" infront and add this to "set GD_Population_Sheriff.Balance.PawnBalance_Sheriff DefaultItemPoolList" - DONE.
 
