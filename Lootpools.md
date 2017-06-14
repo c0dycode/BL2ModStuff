@@ -4,6 +4,7 @@ Move to the area the enemy spawns in and enter this into the console:
 ***getall AIPawnBalanceDefinition Name***
 
 If you don't want to remember the exact command, you can also just create a new file in "Borderlands 2\Binaries\"
+
 Remember, you don't need to give it an extension. So you can just create a new .txt file, edit it, and save it/rename it to just "lootpool" for example.
 
 This way you can just type ***exec lootpool*** instead of ***exec lootpool.txt*** for example.
