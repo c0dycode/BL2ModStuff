@@ -85,7 +85,7 @@ We see the class we need for the command (marked red).
 So we start off our command with
 ***set GD_Population_Sheriff.Balance.PawnBalance_Sheriff***
 
-Since we want to modify one of the *** DefaultItemPoolList(x) ***, this will be our variable name.
+Since we want to modify one of the DefaultItemPoolList(x), this will be our variable name.
 The syntax is:
 
 ```
