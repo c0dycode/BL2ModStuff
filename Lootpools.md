@@ -97,7 +97,7 @@ For a "permanent" patch, convert this into a hotfix, with the help of adudney's 
 
 https://github.com/adudney/BL2_Converter
 
-Since this specifically in Lynchwood, the best matching hotfix-type would be ***SparkLevelPatchEntry***
+Since this is specifically in Lynchwood, the best matching hotfix-type would be ***SparkLevelPatchEntry***
 
 (Thanks again the_Nocturni)
 
