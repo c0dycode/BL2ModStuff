@@ -26,6 +26,7 @@ DefaultItemPoolList(2)=(ItemPool=ItemPoolDefinition'GD_Itempools.Runnables.Pool_
 Since "DefaultItemPoolList(2)" is the only one that is not a guaranteed drop everytime, we're going to up the chance a bit.
 
 The simplest way of modifying the drop chance is:
+
 BaseValueConstant*BaseValueScaleConstant=Effective chance for this loot.
 
 Let's say we want a guaranteed drop, so let's change 
