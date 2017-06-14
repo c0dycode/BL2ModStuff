@@ -48,8 +48,11 @@ For the values:
 so, it's easy enough :)
 
 Let's say we want a guaranteed drop, so let's change 
+
 ***GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=0.000000***
+
 to
+
 ***GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=1.000000***
 
 With this method we can only change this if we include all three pools, that were there by default, into the command. AFAIK changing specifics only works with hotfixes.
@@ -70,7 +73,8 @@ The syntax is:
 set <class> <variable> <value>
 ```
 
-(For more information goto the unrealengine link below)
+(For more information go to https://docs.unrealengine.com/udk/Three/ConsoleCommands.html)
+
 
 ***set GD_Population_Sheriff.Balance.PawnBalance_Sheriff DefaultItemPoolList***
 
@@ -86,7 +90,22 @@ BaseValueConstant=1.000000,BaseValueAttribute=AttributeDefinition'GD_Itempools.D
 
 Add a single "(" infront and add this to "set GD_Population_Sheriff.Balance.PawnBalance_Sheriff DefaultItemPoolList" - DONE.
 
-https://docs.unrealengine.com/udk/Three/ConsoleCommands.html
+# Note:
+This will not be a "permanent" patch. Execute it everytime you're at the location and you should be good to go. Exiting and re-entering the game counts as Re-Entering the location. Therefore you'll have to execute it again.
+
+For a "permanent" patch, convert this into a hotfix, with the help of adudney's amazing converter located here:
+
+https://github.com/adudney/BL2_Converter
+
+Since this specifically in Lynchwood, the best matching hotfix-type would be ***SparkLevelPatchEntry***
+
+(Thanks again the_Nocturni)
+
+
+
+# Creds :P
+
+
 
 
 If there are any mistakes feel free to hit me up on shadow's discord (c0dycode) :)
