@@ -3,7 +3,7 @@
 Move to the area the enemy spawns in and enter this into the console:
 
 ```
-***getall AIPawnBalanceDefinition Name***
+getall AIPawnBalanceDefinition Name
 ```
 
 If you don't want to remember the exact command, you can also just create a new file in "Borderlands 2\Binaries\"
@@ -23,7 +23,7 @@ Now we'll ***obj dump*** it.
 
 So in this example:
 ```
-***obj dump PawnBalance_Sheriff***
+obj dump PawnBalance_Sheriff
 ```
 
 ![Step2](./images/Step2.jpg)
@@ -43,7 +43,7 @@ Since ***DefaultItemPoolList(2)*** is the only one that is not a guaranteed drop
 The simplest way of modifying the drop chance is:
 
 ```
-***BaseValueConstant x BaseValueScaleConstant***=Effective chance for this loot.
+BaseValueConstant x BaseValueScaleConstant = Effective chance for this loot.
 ```
 
 For the values:
@@ -65,13 +65,13 @@ so, it's easy enough :)
 Let's say we want a guaranteed drop, so let's change 
 
 ```
-***GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=0.000000***
+GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=0.000000
 ```
 
 to
 
 ```
-***GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=1.000000***
+GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=1.000000
 ```
 
 With this method we can only change this if we include all three pools, that were there by default, into the command. AFAIK changing specifics only works with hotfixes.
