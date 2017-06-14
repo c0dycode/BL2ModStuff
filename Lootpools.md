@@ -27,7 +27,7 @@ Since ***DefaultItemPoolList(2)*** is the only one that is not a guaranteed drop
 
 The simplest way of modifying the drop chance is:
 
-***BaseValueConstant*BaseValueScaleConstant***=Effective chance for this loot.
+***BaseValueConstant x BaseValueScaleConstant***=Effective chance for this loot.
 
 Let's say we want a guaranteed drop, so let's change 
 ***GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=0.000000***
