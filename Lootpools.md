@@ -29,10 +29,20 @@ The simplest way of modifying the drop chance is:
 
 ***BaseValueConstant x BaseValueScaleConstant***=Effective chance for this loot.
 
+For the values:
+
+1.000000 = 100
+
+0.900000 = 90
+
+0.100000 = 10
+
+so, it's easy enough :)
+
 Let's say we want a guaranteed drop, so let's change 
 ***GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=0.000000***
 to
-***GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=0.200000***
+***GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=1.000000***
 
 With this method we can only change this if we include all three pools into the command. AFAIK changing specifics only works with hotfixes.
 
@@ -43,8 +53,9 @@ We see the class we need for the command (marked red).
 So we start off our command with
 ***set GD_Population_Sheriff.Balance.PawnBalance_Sheriff***
 
-Since we want to modify one of the ***DefaultItemPoolList(x)***, this will be our variable name.
+Since we want to modify one of the *** DefaultItemPoolList(x) ***, this will be our variable name.
 The syntax is:
+
 ```
 set <class> <variable> <value>
 ```
@@ -61,7 +72,7 @@ That leaves us with:
 (ItemPool=ItemPoolDefinition'GD_Sheriff.WeaponPools.Pool_Weapons_SheriffPistols_EnemyUse',PoolProbability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000))
 (ItemPool=ItemPoolDefinition'GD_ItempoolsEnemyUse.Shields.Pool_Shields_Standard_EnemyUse',PoolProbability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000))
 (ItemPool=ItemPoolDefinition'GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(
-BaseValueConstant=0.200000,BaseValueAttribute=AttributeDefinition'GD_Itempools.DropWeights.DropODDS_BossUniqueRares',InitializationDefinition=None,BaseValueScaleConstant=1.000000))
+BaseValueConstant=1.000000,BaseValueAttribute=AttributeDefinition'GD_Itempools.DropWeights.DropODDS_BossUniqueRares',InitializationDefinition=None,BaseValueScaleConstant=1.000000))
 
 Add a single "(" infront and add this to "set GD_Population_Sheriff.Balance.PawnBalance_Sheriff DefaultItemPoolList" - DONE.
 
