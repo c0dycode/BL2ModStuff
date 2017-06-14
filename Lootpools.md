@@ -58,6 +58,8 @@ For step three, we take another look at the result of "obj dump PawnBalance_Sher
 The orange marked area shows you the execution of the command and the very first line it printed out for us.
 We see the class we need for the command (marked red).
 
+![Step3](./images/Step3.jpg)
+
 So we start off our command with
 ***set GD_Population_Sheriff.Balance.PawnBalance_Sheriff***
 
