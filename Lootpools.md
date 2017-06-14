@@ -171,7 +171,7 @@ start of this hotfix-part | Level where to apply this hotfix | Travelstation Nam
 To get the TS-Name use this command.
 
 ```
-getall LevelTravelSationDEfinition StationLevelName
+getall LevelTravelSationDefinition StationLevelName
 ```
 
 And just like in Step1, we choose the value at the end. For this example, this means:
