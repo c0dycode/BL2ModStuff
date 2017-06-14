@@ -95,7 +95,7 @@ set <class> <variable> <value>
 (For more information go to https://docs.unrealengine.com/udk/Three/ConsoleCommands.html)
 
 ```
-***set GD_Population_Sheriff.Balance.PawnBalance_Sheriff DefaultItemPoolList***
+set GD_Population_Sheriff.Balance.PawnBalance_Sheriff DefaultItemPoolList
 ```
 
 We will remove "DefaultItemPoolList(0)=", DefaultItemPoolList(1)= and DefaultItemPoolList(2)= in the command
@@ -232,6 +232,14 @@ Travel to Lynchwood and type in ***obj dump PawnBalance_Sheriff*** again.
 DONE!
 
 Congratulations, you've created yourself a hotfix-file :)
+
+And to check against it, here's the final hotfix:
+
+```
+set Transient.SparkServiceConfiguration_6 Keys ("SparkLevelPatchEntry-sheriff1")
+
+set Transient.SparkServiceConfiguration_6 Values ("Grass_Lynchwood_P,GD_Population_Sheriff.Balance.PawnBalance_Sheriff,DefaultItemPoolList[2].PoolProbability.BaseValueConstant,,1.0")
+```
 
 
 
