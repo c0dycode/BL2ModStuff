@@ -171,13 +171,13 @@ start of this hotfix-part | Level where to apply this hotfix | Travelstation Nam
 To get the TS-Name use this command.
 
 ```
-***getall LevelTravelSationDEfinition StationLevelName***
+getall LevelTravelSationDEfinition StationLevelName
 ```
 
 And just like in Step1, we choose the value at the end. For this example, this means:
 
 ```
-***Grass_Lynchwood_P***
+Grass_Lynchwood_P
 ```
 
 It can be a bit of a PITA to find the right one. I don't know any easier way to do it though. Just copy the results out of the console window (if you use the steam "-log" launchparameter), paste it into notepad and use the search-function.
