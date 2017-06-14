@@ -10,7 +10,7 @@ The command results are the follwing:
 So we found the "Balance" of the "Sheriff". (marked red)
 We only need the green marked part though.
 
-Now we'll "obj dump" it.
+Now we'll ***obj dump*** it.
 
 So in this example:
 ***obj dump PawnBalance_Sheriff***
