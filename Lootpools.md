@@ -118,7 +118,39 @@ This is our final command:
 set GD_Population_Sheriff.Balance.PawnBalance_Sheriff DefaultItemPoolList ((ItemPool=ItemPoolDefinition'GD_Sheriff.WeaponPools.Pool_Weapons_SheriffPistols_EnemyUse',PoolProbability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(ItemPool=ItemPoolDefinition'GD_ItempoolsEnemyUse.Shields.Pool_Shields_Standard_EnemyUse',PoolProbability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(ItemPool=ItemPoolDefinition'GD_Itempools.Runnables.Pool_Sheriff',PoolProbability=(BaseValueConstant=1.000000,BaseValueAttribute=AttributeDefinition'GD_Itempools.DropWeights.DropODDS_BossUniqueRares',InitializationDefinition=None,BaseValueScaleConstant=1.000000))
 ```
 
-Maybe some of you already have noted the ***GD_Itempools.DropWeights.DropODDS_BossUniqueRares***. This also has it's own weight/chance. I want to keep things simple for now though, so we'll just "ignore" it for now.
+Maybe some of you already have noted the ***GD_Itempools.DropWeights.DropODDS_BossUniqueRares***. This also has it's own weight/chance.
+We can use 
+
+```
+obj dump GD_Itempools.DropWeights.DropODDS_BossUniqueRares
+```
+and will get the following result:
+
+```
+ValueResolverChain(0)=ConstantAttributeValueResolver'GD_Itempools.DropWeights.DropODDS_BossUniqueRares:ConstantAttributeValueResolver_0'
+```
+
+We're using this one, since we're looking for the "Constant Value" of this specific pool.
+
+So let's use 
+```
+obj dump GD_Itempools.DropWeights.DropODDS_BossUniqueRares:ConstantAttributeValueResolver_0
+```
+
+The result is:
+```
+=== ConstantAttributeValueResolver properties ===
+ConstantValue=0.330000
+```
+
+Since this is a much simpler structure than before (no Array in this case) we can modify this value with a very simple command.
+
+```
+set GD_Itempools.DropWeights.DropODDS_BossUniqueRares:ConstantAttributeValueResolver_0 ConstantValue 0.66
+```
+
+for example!
+
 
 # Note:
 This will not be a "permanent" patch. Execute it everytime you're at the location and you should be good to go. Exiting and re-entering the game counts as Re-Entering the location. Therefore you'll have to execute it again.
