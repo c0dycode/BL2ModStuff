@@ -203,7 +203,7 @@ start of this hotfix-part | Level (this patch will be triggered in a specific le
 To get the TS-Name use this command.
 
 ```
-getall LevelTravelSationDefinition StationLevelName
+getall LevelTravelStationDefinition StationLevelName
 ```
 
 And just like in Step1, we choose the value at the end. For this example, this means:
