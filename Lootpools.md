@@ -197,7 +197,7 @@ Breaking this down we get:
 ```
 start | Level | SouthpawFactory_P
 
-start of this hotfix-part | Level where to apply this hotfix | Travelstation Name.
+start of this hotfix-part | Level (this patch will be triggered in a specific level/location) | Travelstation Name.
 ```
 
 To get the TS-Name use this command.
