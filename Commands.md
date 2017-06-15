@@ -41,10 +41,15 @@ results in
 ValueResolverChain(0)=ConstantAttributeValueResolver'GD_Itempools.DropWeights.DropODDS_BossUniqueRares:ConstantAttributeValueResolver_0'
 ```
 
-Take ***GD_Itempools.DropWeights.DropODDS_BossUniqueRares:ConstantAttributeValueResolver_0*** and ***obj dump*** it.
+Take ***GD_Itempools.DropWeights.DropODDS_BossUniqueRares:ConstantAttributeValueResolver_0*** and ***obj dump*** it to see the current value.
 
 ```
 obj dump GD_Itempools.DropWeights.DropODDS_BossUniqueRares:ConstantAttributeValueResolver_0
+```
+
+```
+=== ConstantAttributeValueResolver properties ===
+ConstantValue=0.330000
 ```
 
 Then set ConstantValue with
