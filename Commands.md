@@ -28,7 +28,7 @@ To test the location, use
 open XY
 ```
 
-# Get the Drop Chance/weight for DropODDS_BossUniqueRares
+# Get the Drop Chance/Weight for DropODDS_BossUniqueRares for example
 As I keep forgetting how and that I can do this -
 
 ```
