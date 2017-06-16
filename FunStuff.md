@@ -16,8 +16,7 @@ set WorldInfo TimeDilation 1.0
 ```
 ### Note: This only works when executed in the game.
 
-## Speed up EVERYTHING, even the warping screen, main menu etc. Def. is 1.0
-```
+## Speed up EVERYTHING, even the warping screen, main menu etc
 set GameInfo GameSpeed 1.0
 ```
 
