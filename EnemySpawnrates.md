@@ -72,5 +72,18 @@ start Level PandoraPark_P
 set GD_Population_Midget.Population.LootMidget.PopDef_LootMidget_HyperionMix ActorArchetypeList[5].Probability.BaseValueConstant 0.600000
 ```
 
+For a short test I've set all the other ones to 0.
+```
+set GD_Population_Midget.Population.LootMidget.PopDef_LootMidget_HyperionMix ActorArchetypeList[0].Probability.BaseValueConstant 0.000000
+set GD_Population_Midget.Population.LootMidget.PopDef_LootMidget_HyperionMix ActorArchetypeList[1].Probability.BaseValueConstant 0.000000
+set GD_Population_Midget.Population.LootMidget.PopDef_LootMidget_HyperionMix ActorArchetypeList[2].Probability.BaseValueConstant 0.000000
+set GD_Population_Midget.Population.LootMidget.PopDef_LootMidget_HyperionMix ActorArchetypeList[3].Probability.BaseValueConstant 0.000000
+set GD_Population_Midget.Population.LootMidget.PopDef_LootMidget_HyperionMix ActorArchetypeList[4].Probability.BaseValueConstant 0.000000
+```
+
+And the result is a full room of Jimmys ( ͡° ͜ʖ ͡°)
+
+![Jimmy](./images/Jimmy.jpg)
+
 # Credits
 Thanks to Shadows video "Three Things you didn't know about Borderlands 2! Number 2." and his comment there on how to find the populations!
