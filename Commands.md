@@ -19,7 +19,7 @@ Then ***obj dump*** it for example.
 # Get the Levelnames
 
 ```
-getall LevelTravelSationDefinition StationLevelName
+getall LevelTravelStationDefinition StationLevelName
 ```
 
 Same thing here as above. Only the last part is needed.
