@@ -39,7 +39,7 @@ If we look at the code at ***ActorArchetypeList(5)*** we can already see that th
 The chance of this being Jimmy is very high, since he's so rare in comparison to the others.
 
 
-So this is the next one we'll ***obj dump**
+So this is the next one we'll ***obj dump***
 
 ```
 obj dump GD_Population_Midget.Population.LootMidget.PopDef_LootMidget_HyperionMix:PopulationFactoryBalancedAIPawn_5
