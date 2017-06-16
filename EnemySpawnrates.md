@@ -79,6 +79,7 @@ set GD_Population_Midget.Population.LootMidget.PopDef_LootMidget_HyperionMix Act
 set GD_Population_Midget.Population.LootMidget.PopDef_LootMidget_HyperionMix ActorArchetypeList[2].Probability.BaseValueConstant 0.000000
 set GD_Population_Midget.Population.LootMidget.PopDef_LootMidget_HyperionMix ActorArchetypeList[3].Probability.BaseValueConstant 0.000000
 set GD_Population_Midget.Population.LootMidget.PopDef_LootMidget_HyperionMix ActorArchetypeList[4].Probability.BaseValueConstant 0.000000
+set GD_Population_Midget.Population.LootMidget.PopDef_LootMidget_HyperionMix ActorArchetypeList[5].Probability.BaseValueConstant 1.000000
 ```
 
 And the result is a full room of Jimmys ( ͡° ͜ʖ ͡°)
