@@ -22,6 +22,7 @@ set GameInfo GameSpeed 1.0
 
 
 # Other general commands, useful to write down
+
 ```
 getall CustomizationData_Skin HeadMaterial
 getall CustomizationData_Skin BodyMaterial
