@@ -206,6 +206,21 @@ To get the TS-Name use this command.
 getall LevelTravelStationDefinition StationLevelName
 ```
 
+We can also use
+
+```
+getall LevelTravelStationDefinition DisplayName
+```
+If we just can't find the correct object name, for example:
+I was trying to find ***Wildlife Exploitation Preserve*** and just couldn't find it.
+This revealed to me, that it's ***GD_LevelTravelStations.Zone2.PandoraParkToCreatureSlaughter***
+So I just ***obj dump*** it and look at the result for ***StationLevelName***
+
+```
+=== TravelStationDefinition properties ===
+StationLevelName=PandoraPark_P
+```
+
 And just like in Step1, we choose the value at the end. For this example, this means:
 
 ```
@@ -282,6 +297,6 @@ set Transient.SparkServiceConfiguration_6 Values ("Grass_Lynchwood_P,GD_Populati
 
 If there are any mistakes feel free to hit me up on shadow's discord (c0dycode) :)
 
-Thanks to Shadow's Patch and Discord-Community.
+Thanks to Shadows Patch and Discord-Community.
 
 Especially the_Nocturni who explained it, also Mike and EarthAries who started that conversation where I could get most of the infos from :P
