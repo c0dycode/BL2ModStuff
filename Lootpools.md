@@ -155,7 +155,7 @@ for example!
 # Note:
 This will not be a "permanent" patch. Execute it everytime you're at the location and you should be good to go. Exiting and re-entering the game counts as Re-Entering the location. Therefore you'll have to execute it again.
 
-For a "permanent" patch, convert this into a hotfix, with the help of adudney's amazing converter located here:
+For a "permanent" patch, convert this into a hotfix, with the help of adudney's converter located here:
 
 https://github.com/adudney/BL2_Converter
 
@@ -165,7 +165,9 @@ Since this is specifically in Lynchwood, the best matching hotfix-type would be 
 
 
 # Creating the Hotfix
+## Adudney's converter method
 ### Note: This requires you to have the above mentioned converter compiled and working.
+###		  Scroll down for a different method which doesn't require Rust and any compiling.
 
 Okay, let's take our final command again
 
@@ -288,15 +290,37 @@ set Transient.SparkServiceConfiguration_6 Keys ("SparkLevelPatchEntry-sheriff1")
 set Transient.SparkServiceConfiguration_6 Values ("Grass_Lynchwood_P,GD_Population_Sheriff.Balance.PawnBalance_Sheriff,DefaultItemPoolList[2].PoolProbability.BaseValueConstant,,1.0")
 ```
 
+## LightChaosman's UCP FilterTool method
+This tool let's you customize the huge UCP-patchfile. Just check and uncheck the mods you want/don't want.
+More infos about that can be found in this video by the creator LightChaosman: https://youtu.be/zJ4qI4U_lE0
+To always get the most recent version of this tool, head onto shadows discord server and check the #borderlands_mods_to_download channel.
+
+Open up the ***FilterTool.jar*** and click on ***Misc tools -> Convert .hotfix file*** at the top.
+
+![UCPConvert](./images/UCPConvert.png)
+
+Browse to your ***.hotfix-file*** and hit ***Open***.
+
+If everything went correctly, a window will pop up and say
+```
+Conversion complete
+Conversion complete. Output file: ***XY.hotfix.output***
+```
+
+Now click ***Developer tools -> Add single mod*** at the top, browse to your above generated output file ***XY.hotfix.output*** and hit ***Open***.
+![UCPAddMod](./images/UCPAddMod.png)
+
+This will import your hotfix into the huge UCP-patchfile. Make sure it's checked, hit CTRL+S to save and you're ready to go and execute it in the main menu. :)
+
+SHOULD you get any errors after executing the patch-file in the main menu, make sure to wait a few more seconds and try again. Some data may not have been loaded at that point.
 
 
 # Creds :P
-
-
 
 
 If there are any mistakes feel free to hit me up on shadow's discord (c0dycode) :)
 
 Thanks to Shadows Patch and Discord-Community.
 
-Especially the_Nocturni who explained it, also Mike and EarthAries who started that conversation where I could get most of the infos from :P
+Especially the_Nocturni for explaining a lot of things, also Mike and EarthAries who started that conversation where I could get most of the infos from :P
+Also Adudney and LightChaosman for their awesome tools :)
