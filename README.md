@@ -4,8 +4,8 @@
 	* #### [Find the Lootpool of the specific enemy you want to modify](https://github.com/c0dycode/BL2ModStuff/blob/master/Lootpools.md##1-find-the-lootpool-of-the-specific-enemy-you-want-to-modify)
 	* #### [Modify the Lootpool](https://github.com/c0dycode/BL2ModStuff/blob/master/Lootpools.md##2-modify-the-lootpool)
 	* #### [Creating the Hotfix](https://github.com/c0dycode/BL2ModStuff/blob/master/Lootpools.md##creating-the-hotfix)
-	* ###### [Adudney's converter method](https://github.com/c0dycode/BL2ModStuff/blob/master/Lootpools.md##adudneys-converter-method)
-	* ###### [LightChaosman's UCP FilterTool method](https://github.com/c0dycode/BL2ModStuff/blob/master/Lootpools.md##lightchaosmans-ucp-filtertool-method)
+	* #### [Adudney's converter method](https://github.com/c0dycode/BL2ModStuff/blob/master/Lootpools.md##adudneys-converter-method)
+	* #### [LightChaosman's UCP FilterTool method](https://github.com/c0dycode/BL2ModStuff/blob/master/Lootpools.md##lightchaosmans-ucp-filtertool-method)
   	* #### [Credits](https://github.com/c0dycode/BL2ModStuff/blob/master/Lootpools.md##creds-p)
 
 
