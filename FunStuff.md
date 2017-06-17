@@ -21,6 +21,18 @@ set WorldInfo TimeDilation 1.0
 set GameInfo GameSpeed 1.0
 ```
 
+#The next 3 commands only last until you either die completely or got out of FFYL. Haven't found a permanent solution yet.
+```
+#Set WalkingSpeed for Gunzerker
+set CharClass_Mercenary GroundSpeed 440.0
+
+#Set Jumpheight for Gunzerker
+set CharClass_Mercenary JumpZ 630.0
+
+#Changes Movementspeed during FFYL
+set PlayerInjuredDefinition InjuredMovementSpeed 150.0
+```
+
 
 # Other general commands, useful to write down
 
