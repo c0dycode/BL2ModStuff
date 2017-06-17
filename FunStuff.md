@@ -40,3 +40,5 @@ set PlayerInjuredDefinition InjuredMovementSpeed 150.0
 getall CustomizationData_Skin HeadMaterial
 getall CustomizationData_Skin BodyMaterial
 ```
+
+Will give you the skin-objects currently loaded. When you play alone, this will oonly list your Head and Body for example.

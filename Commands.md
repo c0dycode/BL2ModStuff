@@ -1,6 +1,6 @@
 Commands I use and short info and a few reminders for me how to use some commands.
 
-# Get Lootpools in current area.
+# Get Lootpools in current area
 
 ```
 getall AIPawnBalanceDefinition Name
@@ -27,6 +27,17 @@ To test the location, use
 ```
 open XY
 ```
+
+We can also use
+
+```
+getall LevelTravelStationDefinition DisplayName
+```
+If we just can't find the correct object name, for example:
+I was trying to find ***Wildlife Exploitation Preserve*** and just couldn't find it.
+This revealed to me, that it's ***GD_LevelTravelStations.Zone2.PandoraParkToCreatureSlaughter***
+So I just ***obj dump*** it and look at the result for ***StationLevelName***
+
 
 # Get the Drop Chance/Weight for DropODDS_BossUniqueRares for example
 As I keep forgetting how and that I can do this -
