@@ -14,7 +14,7 @@
 	* #### [Credits](https://github.com/c0dycode/BL2ModStuff/blob/master/Lootpools.md##creds-p)
 
 * ## Useful commands
-	* #### [Get Lootpools in current area.](https://github.com/c0dycode/BL2ModStuff/blob/master/Commands.md##get-lootpools-in-current-area)
+	* #### [Get Lootpools in current area](https://github.com/c0dycode/BL2ModStuff/blob/master/Commands.md##get-lootpools-in-current-area)
 	* #### [Get the Levelnames](https://github.com/c0dycode/BL2ModStuff/blob/master/Commands.md##get-the-levelnames)
 	* #### [Get the Drop Chance/Weight for DropODDS_BossUniqueRares for example](https://github.com/c0dycode/BL2ModStuff/blob/master/Commands.md##get-the-drop-chanceweight-for-dropodds_bossuniquerares-for-example)
 

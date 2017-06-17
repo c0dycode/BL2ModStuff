@@ -1,4 +1,4 @@
-# 1. Find the Lootpool of the specific enemy you want to modify.
+# 1. Find the Lootpool of the specific enemy you want to modify
 
 Move to the area the enemy spawns in and enter this into the console:
 
