@@ -29,6 +29,9 @@ set CharClass_Mercenary GroundSpeed 440.0
 #Set Jumpheight for Gunzerker
 set CharClass_Mercenary JumpZ 630.0
 
+#Modify MovementSpeed permanently
+set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_0 MovementSpeedModifier 10
+
 #Changes Movementspeed during FFYL
 set PlayerInjuredDefinition InjuredMovementSpeed 150.0
 ```
