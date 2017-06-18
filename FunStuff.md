@@ -4,6 +4,10 @@
 ```
 set LadderVolume ClimbDir (X=0.0,Y=0.0,Z=1.0)
 ```
+an easier command for this is
+```
+set Engine.Pawn LadderSpeed 200
+```
 
 ## Change Gravity
 ```
