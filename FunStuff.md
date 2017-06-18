@@ -34,7 +34,22 @@ set CharClass_Mercenary GroundSpeed 440.0
 set CharClass_Mercenary JumpZ 630.0
 
 #Modify MovementSpeed permanently
+```
 set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_0 MovementSpeedModifier 10
+```
+The command above sometimes doesn't work for some reason, even happens as hotfix.
+So as a fail-safe I also use all of these as hotfixes:
+
+```
+GD_Tulip_Mechro_Streaming.Pawn_Mechromancer MovementSpeedModifier 3.0
+GD_Mercenary_Streaming.Pawn_Mercenary,MovementSpeedModifier 3.0
+GD_Assassin_Streaming.Pawn_Assassin,MovementSpeedModifier 3.0
+GD_Siren_Streaming.Pawn_Siren,MovementSpeedModifier 3.0
+GD_Lilac_Psycho_Streaming.Pawn_Lilac_Psycho,MovementSpeedModifier 3.0
+GD_Soldier_Streaming.Pawn_Soldier,MovementSpeedModifier 3.0
+```
+
+
 
 #Changes Movementspeed during FFYL
 set PlayerInjuredDefinition InjuredMovementSpeed 150.0
