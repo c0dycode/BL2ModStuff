@@ -132,7 +132,7 @@ Redo the same thing for other Properties and replace them with ***BalancedItems*
 
 For everything I use, I'll try to keep the list down below updated.
 
-# My Array-types so far
+# 2.4: My Array-types
 
 ```
 Package.Object.Class.ValueResolverChain:ObjectProperty
