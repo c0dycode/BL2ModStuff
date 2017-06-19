@@ -41,7 +41,7 @@ This is the object that contains the ***DropODDS***-Objects. So basically the od
 
 Let's check ***DropODDS_BuffDrinks***. Inside we see two objects. Click on ***ConstantAttributeValueResolver_1*** and on the right side we'll see the property ***ConstantValue*** with a value of ***0.050***.
 
-Now check the ***// Reference:***-line below.
+Now check the *** // Reference:***-line below.
 
 We can copy almost everything from this to directly use it in the game.
 ***GD_Itempools.DropWeights.DropODDS_BuffDrinks.ConstantAttributeValueResolver_1*** in this case.
