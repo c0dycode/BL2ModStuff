@@ -7,6 +7,11 @@
 	* #### [2.1: Using Startup.upk](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#using-startupupk)
 	* #### [2.2: Using Engine.upk](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#using-engineupk)
 
+* ## Basic Usage of the UCP FilterTool
+	* #### [Normal codes](https://github.com/c0dycode/BL2ModStuff/blob/master/Adding%20codes%20with%20UCP%20FilterTool.md#normal-code)
+	* #### [Hotfix entry](https://github.com/c0dycode/BL2ModStuff/blob/master/Adding%20codes%20with%20UCP%20FilterTool.md#hotfix-entry)
+	* #### [Credits](https://github.com/c0dycode/BL2ModStuff/blob/master/Adding%20codes%20with%20UCP%20FilterTool.md#credits)
+
 * ## Lootpools
 	* #### [Find the Lootpool of the specific enemy you want to modify](https://github.com/c0dycode/BL2ModStuff/blob/master/Lootpools.md##1-find-the-lootpool-of-the-specific-enemy-you-want-to-modify)
 	* #### [Modify the Lootpool](https://github.com/c0dycode/BL2ModStuff/blob/master/Lootpools.md##2-modify-the-lootpool)
