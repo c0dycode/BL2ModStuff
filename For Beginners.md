@@ -128,3 +128,22 @@ You'll see, that ***BalancedItems*** now will show up in a similar way as if you
 Redo the same thing for other Properties and replace them with ***BalancedItems*** and try out different ***Types*** if needed.
 
 ***Package.Class.ResourcePools*** worked best with ***:ObjectProperty*** for example.
+
+
+For everything I use, I'll try to keep the list down below updated.
+
+# My Array-types so far
+
+```
+Package.Object.Class.ValueResolverChain:ObjectProperty
+Package.Object.Class.BalancedItems:PointerProperty
+Package.Class.ResourcePools:ObjectProperty
+Package.Class.InputContexts:PointerProperty
+Package.Class.PlayerClassAchievementData:PointerProperty
+Package.Class.EligibleUsage:ObjectProperty
+Package.Class.OnLevelUp:ObjectProperty
+Package.Class.OnLevelUpNaturally:ObjectProperty
+Package.Class.Behaviors:ObjectProperty
+Package.Class.Behaviors.SkillEffectDefinitions:PointerProperty
+Package.Class.ContextResolverChain:ObjectProperty
+```
