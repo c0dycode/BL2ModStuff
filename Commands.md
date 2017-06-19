@@ -96,4 +96,6 @@ In this case I just put ***getall WillowPopulationDefinition Name*** in the Spaw
 
 Press F8 in the game and the command will execute.
 
+#### Note: According to the infos in the Engine.upk, you can bind mutliple commands to the same button. Just add another entry to this array with the same Name but different command.
+
 # More to be added probably
