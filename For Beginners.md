@@ -74,7 +74,6 @@ For this example I'm just going to open up the class ***Camera*** instead.
 On the right side, you'll now see actual code.
 The best things can usually be found at the very bottom of the class. It's basically a list of all the ***defaultproperties*** being used by this class.
 
-![DefProp](./images/DefProp.png)
 
 Let's say we'd like to change the value of ***DefaultFOV***.
 
