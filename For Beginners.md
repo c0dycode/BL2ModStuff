@@ -62,7 +62,9 @@ Here's a small example.
 First we open it up. Once again we choose ***Objects*** at the top-left.
 This time, if we click on ***Content*** we barely get anything.
 
-BUT, this time we can click on ***Classes***.
+BUT, this time we can click on ***Classes*** instead.
+
+![Classes](./images/Classes.png)
 
 Here, we can also actually use the search-function. This is incredibly useful.
 You can either click on ***Tools -> Find -> Find in classes*** or press CTRL+Shift+F. Enter any keyword you're looking for.
