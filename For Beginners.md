@@ -22,9 +22,7 @@ These files are the ones you want to open up in UE Explorer.
 
 # Note: Unfortunately UE Explorer won't show you all objects/classes etc. I'll follow up with a few other methods on how to find more stuff.
 
-# Step 2
-## Using UE Explorer
-
+# Step 2 Using UE Explorer
 ### Using Startup.upk
 
 Let's open up the decompressed ***Startup.upk***.

@@ -2,10 +2,10 @@
 
 * ## For Beginners
 	* #### [What you will need](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#what-you-will-need)
-	* #### [Step 1 Preparing the Files](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#step-1)
-	* #### [Using UE Explorer](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#using-ue-explorer)
-	* #### [Using Startup.upk](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#using-startupupk)
-	* #### [Using Engine.upk](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#using-engineupk)
+	* #### [1: Preparing the Files](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#step-1)
+	* #### [2: Using UE Explorer](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#using-ue-explorer)
+	* #### [2.1: Using Startup.upk](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#using-startupupk)
+	* #### [2.2: Using Engine.upk](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#using-engineupk)
 
 * ## Lootpools
 	* #### [Find the Lootpool of the specific enemy you want to modify](https://github.com/c0dycode/BL2ModStuff/blob/master/Lootpools.md##1-find-the-lootpool-of-the-specific-enemy-you-want-to-modify)
