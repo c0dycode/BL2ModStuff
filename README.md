@@ -29,6 +29,7 @@
 	* #### [Get Lootpools in current area](https://github.com/c0dycode/BL2ModStuff/blob/master/Commands.md##get-lootpools-in-current-area)
 	* #### [Get the Levelnames](https://github.com/c0dycode/BL2ModStuff/blob/master/Commands.md##get-the-levelnames)
 	* #### [Get the Drop Chance/Weight for DropODDS_BossUniqueRares for example](https://github.com/c0dycode/BL2ModStuff/blob/master/Commands.md##get-the-drop-chanceweight-for-dropodds_bossuniquerares-for-example)
+	* #### [Setting up a hotkey for commands](https://github.com/c0dycode/BL2ModStuff/blob/master/Commands.md#setting-up-a-hotkey-for-commands)
 
 * ## Fun commands
 	* #### [Climbing ladders super fast](https://github.com/c0dycode/BL2ModStuff/blob/master/FunStuff.md##climbing-ladders-super-fast-increase-z-value)
