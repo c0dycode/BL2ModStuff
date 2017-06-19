@@ -27,7 +27,7 @@ set WorldInfo TimeDilation 1.0
 set GameInfo GameSpeed 1.0
 ```
 
-# The next 3 commands only last until you either die completely or got out of FFYL. Haven't found a permanent solution yet.
+# The next 3 commands only last until you either die completely or got out of FFYL.
 
 ```
 #Set WalkingSpeed for Gunzerker
