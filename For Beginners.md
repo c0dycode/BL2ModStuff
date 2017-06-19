@@ -7,7 +7,7 @@ In this guide I want to show people, that are new to this, how I started and wha
 [UE Explorer](http://eliotvu.com/portfolio/view/21/ue-explorer)
 
 
-# Step 1
+# Step 1 Preparing the Files
 
 Extract the decompressor and install UE Explorer.
 
