@@ -2,8 +2,8 @@ In this guide I want to show people, that are new to this, how I started and wha
 
 # What you will need
 
-	* [Unreal Package Decompressor](http://www.gildor.org/downloads)
-	* [UE Explorer](http://eliotvu.com/portfolio/view/21/ue-explorer)
+[Unreal Package Decompressor](http://www.gildor.org/downloads)
+[UE Explorer](http://eliotvu.com/portfolio/view/21/ue-explorer)
 
 
 # Step 1
