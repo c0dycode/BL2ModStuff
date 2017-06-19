@@ -7,7 +7,7 @@ In this guide I want to show people, that are new to this, how I started and wha
 [UE Explorer](http://eliotvu.com/portfolio/view/21/ue-explorer)
 
 
-# 1: Preparing the Files
+# 1: Preparing the Files and UE Explorer
 
 Extract the decompressor and install UE Explorer.
 
@@ -83,4 +83,44 @@ Take the ***class name***, the ***propertyname*** and the ***value*** you want, 
 
 For this example:
 
-```set Camera DefaultFOV 85.0```
+```set Camera DefaultFOV 85.0
+```
+
+
+## 2.3: Setting Array-types in UE Explorer
+First click on ***Options*** at the top. In this new window click ***Add*** in the top-middle of the window.
+
+What I've added there are two things so far.
+```
+Package.Object.Class.ValueResolverChain:ObjectProperty
+Package.Object.Class.BalancedItems:PointerProperty
+```
+
+How you get these? To be completely honest, I have no idea. :P
+
+I just played around and ended up with something that apparently works.
+So what I ended up doing was this:
+
+I opened up the ***Startup.upk*** and unfolded the ***GD_Itempools***-entry.
+
+On the right side you'll see
+```
+Package'GD_Itempools'
+```
+
+So, Package is the very first part of our Array-type. Also the very first thing you open up in UE Explorer.
+
+The next one will be the ***Object***, so for example ***Runnables***.
+The orange entry is the ***Class***. So let's click on ***Pool_KingMong***.
+
+If we have not set up any Array types, we will now see:
+
+```
+BalancedItems=/* Array type was not detected. */
+```
+
+Since we want to see the results of ***BalancedItems*** we will choose this as the last path for the Array-type.
+
+What is left now, is the correct type in the end. Head back into the ***Options***-screen and play around with the Types. After selecting one, the "Group"box above should now have ***:YOURCHOSENTYPE*** behind everything else. Hit ***Save*** on the right side, switch back to the ***Startup.apk***-Tab, click on ***Tools*** below the Tab and ***Reload***.
+
+You'll see, that ***BalancedItems*** now will show up in a similar way as if you'd have obj dumped it in the game.
