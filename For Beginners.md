@@ -37,6 +37,8 @@ So let's use ***DropWeights*** for example.
 
 This is the object that contains the ***DropODDS***-Objects. So basically the odds of this object dropping something.
 
+[StartupOverview](./images/StartupOverview.png)
+
 Let's check ***DropODDS_BuffDrinks***. Inside we see two objects. Click on ***ConstantAttributeValueResolver_1*** and on the right side we'll see the property ***ConstantValue*** with a value of ***0.050***.
 
 Now check the ***// Reference:***-line below.
@@ -69,6 +71,8 @@ For this example I'm just going to open up the class ***Camera*** instead.
 
 On the right side, you'll now see actual code.
 The best things can usually be found at the very bottom of the class. It's basically a list of all the ***defaultproperties*** being used by this class.
+
+[DefProp](./images/DefProp.png)
 
 Let's say we'd like to change the value of ***DefaultFOV***.
 
