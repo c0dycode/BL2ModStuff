@@ -7,7 +7,7 @@ In this guide I want to show people, that are new to this, how I started and wha
 [UE Explorer](http://eliotvu.com/portfolio/view/21/ue-explorer)
 
 
-# Step 1 Preparing the Files
+# 1: Preparing the Files
 
 Extract the decompressor and install UE Explorer.
 
@@ -22,8 +22,8 @@ These files are the ones you want to open up in UE Explorer.
 
 # Note: Unfortunately UE Explorer won't show you all objects/classes etc. I'll follow up with a few other methods on how to find more stuff.
 
-# Step 2 Using UE Explorer
-### Using Startup.upk
+# 2: Using UE Explorer
+### 2.1: Using Startup.upk
 
 Let's open up the decompressed ***Startup.upk***.
 
@@ -50,7 +50,7 @@ So to change the ConstantValue in the game, we can just use this in the console:
 set GD_Itempools.DropWeights.DropODDS_BuffDrinks.ConstantAttributeValueResolver_1 ConstantValue 0.65
 ```
 
-### Using Engine.upk
+### 2.2: Using Engine.upk
 
 Using UE Explorer with the Engine.upk is a little bit different but revealed a lot more stuff to me.
 
