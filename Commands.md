@@ -70,5 +70,30 @@ set GD_Itempools.DropWeights.DropODDS_BossUniqueRares:ConstantAttributeValueReso
 ```
 
 
+# Setting up a hotkey for commands
+Use the following command
+```
+set PlayerInput Bindings 
+( 
+(
+Name = F8,
+Command = "exec Spawn",
+Control = false,
+Shift = false,
+Alt = false,
+LeftTrigger = false,
+RightTrigger = false,
+bIgnoreCtrl = false,
+bIgnoreShift = false,
+bIgnoreAlt = false
+) 
+)
+```
+
+Switch ***F8*** to your preferred key and the command to whatever you want.
+I had to put the command in ***"*** to keep the spaces.
+In this case I just put ***getall WillowPopulationDefinition Name*** in the Spawn-file.
+
+Press F8 in the game and the command will execute.
 
 # More to be added probably
