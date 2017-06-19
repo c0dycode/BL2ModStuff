@@ -49,7 +49,7 @@ You either leave it at ***None***, which will basically execute your code everyt
 
 or
 
-set a specific Levelname where it's supposed to trigger the execution of the code. You can find a guide for that [here](https://github.com/c0dycode/BL2ModStuff/blob/master/Commands.md##get-the-levelnames)
+set a specific Levelname where it's supposed to trigger the execution of the code. You can find a guide for that [here](https://github.com/c0dycode/BL2ModStuff/blob/master/Commands.md##get-the-levelnames).
 
 ###### OnDemand
 OnDemand pretty much works exactly the same as Level above.
@@ -64,7 +64,7 @@ GD_Mercenary_Streaming
 
 Insert your code, click OK and you're DONE.
 
-# Hint: For code with mutliple lines, use the ***Auto format***-button in the top right. It's amazing!
+# Hint: For code with multiple lines, use the ***Auto format***-button in the top right. It's amazing!
 
 
 # Credits
