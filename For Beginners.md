@@ -51,6 +51,7 @@ set GD_Itempools.DropWeights.DropODDS_BuffDrinks.ConstantAttributeValueResolver_
 ```
 
 ### 2.2: Using Engine.upk
+#### Note: Also this won't show you everything there is. You'll find a lot more if you use the console in the game to poke around. This should give you a good basic understanding of what to look for, what you can use and where/when.
 
 Using UE Explorer with the Engine.upk is a little bit different but revealed a lot more stuff to me.
 
