@@ -1,6 +1,6 @@
 # Adding commands into the patch-file
 
-Adding a commands into the patch-file is really easy with the FilterTool.
+Adding a command into the patch-file is really easy with the FilterTool.
 
 Right click a category where you want your code and click ***Insert code***.
 
