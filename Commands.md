@@ -105,4 +105,14 @@ Press F8 in the game and the command will execute.
 
 #### Note: This will only show the results in the log window. So either use the ***-log*** Launchparameter in steam, or enter ***showlog*** in the game console to toggle the log-window on and off.
 
+# Togglebinds
+Will explain these at some point.
+
+# Leveling someone with Infinity made super easy
+Instead of putting something onto your mouse or keyboard, you can aim at the correct spot and then type in ***startfire***. This will let you keep firing, even if you tab out of the game.
+
+To stop, just type in ***stopfire***.
+
+
+
 # More to be added
