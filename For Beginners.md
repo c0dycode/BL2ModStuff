@@ -124,3 +124,7 @@ Since we want to see the results of ***BalancedItems*** we will choose this as t
 What is left now, is the correct type in the end. Head back into the ***Options***-screen and play around with the Types. After selecting one, the "Group"box above should now have ***:YOURCHOSENTYPE*** behind everything else. Hit ***Save*** on the right side, switch back to the ***Startup.apk***-Tab, click on ***Tools*** below the Tab and ***Reload***.
 
 You'll see, that ***BalancedItems*** now will show up in a similar way as if you'd have obj dumped it in the game.
+
+Redo the same thing for other Properties and replace them with ***BalancedItems*** and try out different ***Types*** if needed.
+
+***Package.Class.ResourcePools*** worked best with ***:ObjectProperty*** for example.
