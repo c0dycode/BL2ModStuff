@@ -96,6 +96,6 @@ In this case I just put ***getall WillowPopulationDefinition Name*** in the Spaw
 
 Press F8 in the game and the command will execute.
 
-#### Note: According to the infos in the Engine.upk, you can bind mutliple commands to the same button. Just add another entry to this array with the same Name but different command.
+#### Note: This will only show the results in the log window. So either use the ***-log*** Launchparameter in steam, or enter ***showlog*** in the game console to toggle the log-window on and off.
 
 # More to be added probably
