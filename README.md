@@ -7,7 +7,7 @@
 	* #### [2.1: Using Startup.upk](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#using-startupupk)
 	* #### [2.2: Using Engine.upk](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#using-engineupk)
 	* #### [2.3: Setting Array-types in UE Explorer](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#23-setting-array-types-in-ue-explorer)
-	* #### [2.4: My Arry-types](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#my-array-types)
+	* #### [2.4: My Array-types](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#my-array-types)
 
 * ## Basic Usage of the UCP FilterTool
 	* #### [Normal codes](https://github.com/c0dycode/BL2ModStuff/blob/master/Adding%20codes%20with%20UCP%20FilterTool.md#normal-code)
