@@ -94,8 +94,15 @@ Switch ***F8*** to your preferred key and the command to whatever you want.
 I had to put the command in ***"*** to keep the spaces.
 In this case I just put ***getall WillowPopulationDefinition Name*** in the Spawn-file.
 
+To execute multiple commands at the same time, split them with a ***pipe***-character. ->
+For example:
+
+```
+Command = "exec Spawn | exec lp"
+```
+
 Press F8 in the game and the command will execute.
 
 #### Note: This will only show the results in the log window. So either use the ***-log*** Launchparameter in steam, or enter ***showlog*** in the game console to toggle the log-window on and off.
 
-# More to be added probably
+# More to be added
