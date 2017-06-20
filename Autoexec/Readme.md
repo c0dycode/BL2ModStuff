@@ -17,7 +17,7 @@ You'll need the additional image-file though.
 2. It more or less calculates a fairly small area depending on your resolution. I'm using 1920x1080, so if you're having issues just hit me up, or edit the source code and run it yourself :)
 3. It checks if the ***Borderlands2.exe*** is already running, and if not, it launches it over steam.
 4. It'll activate and focus the window for you. Tabbing out, if you're playing Exclusive Fullscreen, won't really work, since it'll monitor your screen for a specific area.
-5. It'll then search the upper right corner of the game-screen for the content in this pciture ![BL2Check](./BL2Check.png)
+5. It'll then search the upper right corner of the game-screen for the content in this picture ![BL2Check](./BL2Check.png)
 6. If it has found the area, it'll wait ***6000ms*** by default. This works out for me. Though BL2 is on an SSD. So you may have to change that in the ***Autoexec.ini***. 
 7. It'll then open up the Console by pressing ***F6*** and type ***exec patch.txt*** by default press Enter and close the Console again. You won't even see it probably. All I see is my mouse-cursor all of a sudden :P. You can also change the patchname in the INI-file.
 8. It'll then close itself and DONE.
