@@ -132,6 +132,7 @@ Redo the same thing for other Properties and replace them with ***BalancedItems*
 
 
 For everything I use, I'll try to keep the list down below updated.
+Should you play around with these and see that I chose one that makes less sense with the results, hit me up, so I can fix it.
 
 # 2.4: My Array-types
 
@@ -147,4 +148,7 @@ Package.Class.OnLevelUpNaturally:ObjectProperty
 Package.Class.Behaviors:ObjectProperty
 Package.Class.Behaviors.SkillEffectDefinitions:PointerProperty
 Package.Class.ContextResolverChain:ObjectProperty
+Package.Class.AssetPaths:PointerProperty
+Package.Class.Dependencies:ObjectProperty
+Package.Class.Manufacturers:PointerProperty
 ```
