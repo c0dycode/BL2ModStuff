@@ -1,7 +1,7 @@
 # Overview of the stuff you'll find here
 
 * ## For Beginners
-	* #### [What you will need](https://github.com/c0dycode/BL2ModStuff/blob/master/docs/For%20Beginners.md#what-you-will-need)
+	* #### [What you will need](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#what-you-will-need)
 	* #### [1: Preparing the Files](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#step-1)
 	* #### [2: Using UE Explorer](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#using-ue-explorer)
 	* #### [2.1: Using Startup.upk](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#using-startupupk)
