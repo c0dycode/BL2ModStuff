@@ -21,6 +21,8 @@ SetTitleMatchMode, 3
 FileInstall, BL2Check.png, BL2Check.png, 1
 FileInstall, BL2Check2.png, BL2Check2.png, 1
 
+SetTimer, IsBorderlandsClosed, 5000
+
 IfNotExist, Autoexec.ini
 {
     IniWrite, patch.txt, Autoexec.ini, Settings, patchname
@@ -104,7 +106,12 @@ Send {Space}
 Send %Clipboard%
 Send {Enter}
 
+IsBorderlandsClosed:
+If !ProcessExist("Borderlands2.exe")
+    ExitApp
+
 ProcessExist(Name){
 	Process,Exist,%Name%
 	return Errorlevel
 }
+

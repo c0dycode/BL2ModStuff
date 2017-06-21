@@ -43,8 +43,8 @@ That's the only thing that differs from the official Autohotkey-version. Most "A
 I've added this one now, since I thought it could make digging through stuff a little bit easier.
 
 Difference to the normal version is:
-This is now a persistent script. Meaning you need to manually close it in the traybar if you're done. I've also added a Hotkey ***F9***. What it does, you press F9, and the script will focus back onto BL2. It'll then check whether you already have the console open or not. If you do it'll skip the step of opening it. So it's not getting closed.
+I've added a Hotkey ***F9***. What it does, if you press F9, and the script will focus back onto BL2. It'll then check whether you already have the console open or not. If you do, it'll skip the step of opening it. So it's not getting closed.
 
 Next it'll type ***obj dump*** for you, paste whatever you have in your clipboard and sent the command.
 
-Remember, some Anti-Cheat-Tools don't like Autohotkey. So make sure you exit it before you play any other games.
+Remember, some Anti-Cheat-Tools don't like Autohotkey. For this reason I've added a check every ***5000ms*** if Borderlands is still running. If it's not, the script will exit automatically.
