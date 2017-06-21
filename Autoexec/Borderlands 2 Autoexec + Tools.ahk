@@ -122,6 +122,7 @@ SendRaw obj dump
 Send {Space}
 Send %Clipboard%
 Send {Enter}
+return
 
 #IfWinActive ahk_class LaunchUnrealUWindowsClient
 ^F2::RapidFIre:=!RapidFire
@@ -140,6 +141,7 @@ LButton::
     else
         Click
 }
+return
 
 IsBorderlandsClosed:
 If !ProcessExist("Borderlands2.exe")

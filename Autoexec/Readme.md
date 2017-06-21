@@ -23,13 +23,13 @@ You'll need the additional image-file though.
 
 # What does it do?
 
-1. It checks if the ***Autoexec.ini*** is there already. If not, it'll create it and enter two default values. You can customize them afterwards however you want.
+1. It checks if the ***Autoexec.ini*** is there already. If not, it'll create it and enter the default values. You can customize them afterwards however you want.
 2. It more or less calculates a fairly small area depending on your resolution. I'm using 1920x1080, so if you're having issues just hit me up, or edit the source code and run it yourself :)
 3. It checks if the ***Borderlands2.exe*** is already running, and if not, it launches it over steam.
 4. It'll activate and focus the window for you. Tabbing out, if you're playing Exclusive Fullscreen, won't really work, since it'll monitor your screen for a specific area.
 5. It'll then search the upper right corner of the game-screen for the content in this picture ![BL2Check](./BL2Check.png)
 6. If it has found the area, it'll wait ***6000ms*** by default. This works out for me. Though BL2 is on an SSD. So you may have to change that in the ***Autoexec.ini***. 
-7. It'll then open up the Console by pressing ***F6*** and type ***exec patch.txt*** by default press Enter and close the Console again. You won't even see it probably. All I see is my mouse-cursor all of a sudden :P. You can also change the patchname in the INI-file.
+7. It'll then open up the Console by pressing ***F6*** and type ***exec patch.txt*** by default, press Enter and close the Console again. You won't even see it probably. All I see is my mouse-cursor all of a sudden :P. You can also change the patchname in the INI-file.
 8. It'll then close itself and DONE.
 
 # Installation
@@ -42,7 +42,7 @@ The last two seconds or so are the queue for me, where I can execute the patches
 Execute the tool once, make sure BL2 is closed though, so you can adjust the delay properly, check what the console does and check if you've gotten any errors. If so, exit BL2 completely, raise the delay and try again.
 
 # Pre-Compiled and infos about it
-I'll put up the precompiled version. This includes the image-file already and it'll be "extracted" out of the .exe-file during runtime. It'll stay there and should it be deleted, modified or whatever, it'll be overwritten again.
+I'll put up the precompiled version. This includes the image-file(s) already and it'll be "extracted" out of the .exe-file during runtime. It'll stay there and should it be deleted, modified or whatever, it'll be overwritten again.
 
 Some people would sooner or later "discover" that the Description is not "Autohotkey" but "Chromeium" instead.
 
