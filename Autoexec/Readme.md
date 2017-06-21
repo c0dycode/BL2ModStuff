@@ -1,6 +1,7 @@
 # General Features (both versions)
 * Automatically launch your Steamversion of Borderlands 2
 * Autoexec your patch-file (patch.txt by default)
+## NOTE: It can not check if the execution has actually worked. Or if it was too early. At least not yet.
 * Showing a Tooltip next to your cursor when patch has been executed
 
 # Extra Features in the Tools-Version
