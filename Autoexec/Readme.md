@@ -1,3 +1,12 @@
+# General Features (both versions)
+* Automatically launch your Steamversion of Borderlands 2
+* Autoexec your patch-file (patch.txt by default)
+* Showing a Tooltip next to your cursor when patch has been executed
+
+# Extra Features in the Tools-Version
+* Toggle RapidFire-Script with CTRL+F2
+* Hotkey (F9) to OBj DUMP whatever you have in your clipboard (requires console on F6 for now)
+
 # Introduction
 Okay, I've written this little Autohotkey-Script to allow you to not having to type it manually in the console.
 
@@ -45,6 +54,8 @@ I've added this one now, since I thought it could make digging through stuff a l
 Difference to the normal version is:
 I've added a Hotkey ***F9***. What it does, if you press F9, and the script will focus back onto BL2. It'll then check whether you already have the console open or not. If you do, it'll skip the step of opening it. So it's not getting closed.
 
-Next it'll type ***obj dump*** for you, paste whatever you have in your clipboard and sent the command.
+Next it'll type ***obj dump*** for you, paste whatever you have in your clipboard and send the command.
+
+It also got a Toggle-RapidFire-Script now. As long as BL2 is focused, you can hit CTRL+F2 to toggle it on and off. While it's active, all you need to do is hold down your left mouse button. You can change the ***RapidFireDelay*** in the INI-file to whatever you like.
 
 Remember, some Anti-Cheat-Tools don't like Autohotkey. For this reason I've added a check every ***5000ms*** if Borderlands is still running. If it's not, the script will exit automatically.
