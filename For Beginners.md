@@ -151,4 +151,7 @@ Package.Class.ContextResolverChain:ObjectProperty
 Package.Class.AssetPaths:PointerProperty
 Package.Class.Dependencies:ObjectProperty
 Package.Class.Manufacturers:PointerProperty
+Package.Class.WeaponAttributeEffects:PointerProperty
+Package.Class.ZoomWeaponAttributeEffects:PointerProperty
+Package.Class.AttributeSlotUpgrades:PointerProperty
 ```
