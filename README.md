@@ -8,6 +8,13 @@
 	* #### [2.2: Using Engine.upk](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#using-engineupk)
 	* #### [2.3: Setting Array-types in UE Explorer](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#23-setting-array-types-in-ue-explorer)
 	* #### [2.4: My Array-types](https://github.com/c0dycode/BL2ModStuff/blob/master/For%20Beginners.md#my-array-types)
+	
+* ## My Autohotkey-Autoexec-Tool/Script
+	* #### [Introduction](https://github.com/c0dycode/BL2ModStuff/tree/master/Autoexec#introduction)
+	* #### [What does it do?](https://github.com/c0dycode/BL2ModStuff/tree/master/Autoexec#what-does-it-do)
+	* #### [Installation](https://github.com/c0dycode/BL2ModStuff/tree/master/Autoexec#installation)
+	* #### [Pre-Compiled and infos about it](https://github.com/c0dycode/BL2ModStuff/tree/master/Autoexec#pre-compiled-and-infos-about-it)
+	* #### [Borderlands 2 Autoexec + Tools variant](https://github.com/c0dycode/BL2ModStuff/tree/master/Autoexec#borderlands-2-autoexec--tools-variant)
 
 * ## Basic Usage of the UCP FilterTool
 	* #### [Normal codes](https://github.com/c0dycode/BL2ModStuff/blob/master/Adding%20codes%20with%20UCP%20FilterTool.md#normal-code)
