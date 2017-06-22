@@ -10,7 +10,8 @@
 
 # Currently known issues | What's being worked on
 
-* Using the RapidFire-Script will make aiming harder since it's basically interrupting your mouse movement every X ms. Currently looking into that.
+* ~~Using the RapidFire-Script will make aiming harder since it's basically interrupting your mouse movement every X ms. Currently looking into that.~~
+* The RapidFire-Script is a lot more usable now. While looking up similar issues, I've seen someone mention this exact same problem with BL2 or maybe even UE3 in general with AutoHotkey. So ther's a good chance this will be the best it'll be.
 
 # Introduction
 Okay, I've written this little Autohotkey-Script to allow you to not having to type it manually in the console.

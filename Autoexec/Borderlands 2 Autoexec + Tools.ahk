@@ -127,31 +127,40 @@ return
 #IfWinActive ahk_class LaunchUnrealUWindowsClient
 ^F2::RapidFIre:=!RapidFire
 
-#IfWinActive ahk_class LaunchUnrealUWindowsClient
+
 LButton::
 {
     If RapidFire
     {
         while GetKeyState("LButton","P")
             {
-                Click
+                SendPlay, {Click}
                 Sleep, %rapidfiredelay%
             }
     }
     else
-        Click
+    {
+        SendPlay, {Click}
+        KeyWait, LButton, T0.1
+        If Errorlevel
+            while GetKeyState("LButton","P")
+            {
+                SendPlay, {Click}
+                Sleep, 150
+            }
+        else
+            return
+    }
 }
 return
+
 
 IsBorderlandsClosed:
 If !ProcessExist("Borderlands2.exe")
     ExitApp
-
 
 ; Function-Section 
 ProcessExist(Name){
 	Process,Exist,%Name%
 	return Errorlevel
 }
-
-
