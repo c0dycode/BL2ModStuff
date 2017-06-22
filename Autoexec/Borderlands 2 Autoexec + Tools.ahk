@@ -3,7 +3,7 @@
 #MaxHotkeysPerInterval 99000000
 #HotkeyInterval 99000000
 #KeyHistory 0
-#SingleInstance
+#SingleInstance, FORCE
 #Persistent
 ListLines Off
 Process, Priority, , A
@@ -98,13 +98,13 @@ GameIsRunning:
 SetTimer, IsBorderlandsClosed, On
 
 F9::
+Sleep 150
 while (1)
     {    
         WinActivate, ahk_class LaunchUnrealUWindowsClient
         WinWaitActive, ahk_class LaunchUnrealUWindowsClient
         WinShow, ahk_class LaunchUnrealUWindowsClient
         ImageSearch, Xpos, YPos, 0, 0, %A_ScreenWidth%, %A_ScreenHeight%, *130 BL2Check2.png
-    
         if errorlevel=0
         {
             Console := "Yes"
@@ -118,8 +118,11 @@ while (1)
     }
 WinActivate, ahk_class LaunchUnrealUWindowsClient
 WinWaitActive, ahk_class LaunchUnrealUWindowsClient
-IfEqual, Console, No
-    Send {F6}
+Sleep, 150
+IfEqual, ConsoleKey, Tilde
+    Send, ~
+else
+    Send, {F6}
 Sleep, 50
 SendRaw obj dump
 Send {Space}
@@ -130,8 +133,8 @@ return
 #IfWinActive ahk_class LaunchUnrealUWindowsClient
 ^F2::RapidFIre:=!RapidFire
 
-
-~*LButton::
+#IfWinActive ahk_class LaunchUnrealUWindowsClient
+*~LButton::
 If RapidFire
     {
         while GetKeyState("LButton","P")
