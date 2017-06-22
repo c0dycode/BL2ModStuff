@@ -35,6 +35,7 @@ IfExist, Autoexec.ini
 {
     IniRead, patchname, Autoexec.ini, Settings, patchname
     IniRead, delay, Autoexec.ini, Settings, delay, 7000
+    IniRead, ConsoleKey, %A_MyDocuments%\My Games\Borderlands 2\WillowGame\Config\WillowInput.ini, Engine.Console, ConsoleKey
 }
 
 Width := 1.15 * (A_ScreenWidth / 2) 
@@ -69,7 +70,10 @@ Sleep, %delay%
 WinActivate, ahk_class LaunchUnrealUWindowsClient
 WinWaitActive, ahk_class LaunchUnrealUWindowsClient
 WinShow, ahk_class LaunchUnrealUWindowsClient
-Send, {F6}
+IfEqual, ConsoleKey, Tilde
+    Send, ~
+else
+    Send, {F6}
 Send, exec{Space}
 Send, %patchname%
 Send, {Enter}

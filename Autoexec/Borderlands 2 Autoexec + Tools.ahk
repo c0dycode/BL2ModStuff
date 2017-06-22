@@ -15,7 +15,6 @@ SetWinDelay, -1
 SetControlDelay, -1
 SendMode Input
 SetWorkingDir %A_ScriptDir%
-SetControlDelay -1
 CoordMode, Pixel, Client
 SetTitleMatchMode, 3
 FileInstall, BL2Check.png, BL2Check.png, 1
@@ -43,6 +42,7 @@ IfExist, Autoexec.ini
     IniRead, patchname, Autoexec.ini, Settings, patchname
     IniRead, delay, Autoexec.ini, Settings, delay, 7000
     IniRead, rapidfiredelay, Autoexec.ini, Settings, RapidFireDelay, 20
+    IniRead, ConsoleKey, %A_MyDocuments%\My Games\Borderlands 2\WillowGame\Config\WillowInput.ini, Engine.Console, ConsoleKey
     
     IniWrite, %patchname%, Autoexec.ini, Settings, patchname
     IniWrite, %delay%, Autoexec.ini, Settings, delay
@@ -82,7 +82,10 @@ Sleep, %delay%
 WinActivate, ahk_class LaunchUnrealUWindowsClient
 WinWaitActive, ahk_class LaunchUnrealUWindowsClient
 WinShow, ahk_class LaunchUnrealUWindowsClient
-Send, {F6}
+IfEqual, ConsoleKey, Tilde
+    Send, ~
+else
+    Send, {F6}
 Send, exec{Space}
 Send, %patchname%
 Send, {Enter}
