@@ -13,7 +13,7 @@ SetMouseDelay, -1
 SetDefaultMouseSpeed, 0
 SetWinDelay, -1
 SetControlDelay, -1
-SendMode Input
+;~ SendMode Input
 SetWorkingDir %A_ScriptDir%
 CoordMode, Pixel, Client
 SetTitleMatchMode, 3
@@ -131,30 +131,15 @@ return
 ^F2::RapidFIre:=!RapidFire
 
 
-LButton::
-{
-    If RapidFire
+~*LButton::
+If RapidFire
     {
         while GetKeyState("LButton","P")
-            {
-                SendPlay, {Click}
-                Sleep, %rapidfiredelay%
-            }
+        {
+           SendPlay, {Click}
+           Sleep, %rapidfiredelay%
+        }
     }
-    else
-    {
-        SendPlay, {Click}
-        KeyWait, LButton, T0.1
-        If Errorlevel
-            while GetKeyState("LButton","P")
-            {
-                SendPlay, {Click}
-                Sleep, 150
-            }
-        else
-            return
-    }
-}
 return
 
 
