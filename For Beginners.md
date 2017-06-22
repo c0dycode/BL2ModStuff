@@ -91,11 +91,7 @@ set Camera DefaultFOV 85.0
 ## 2.3: Setting Array-types in UE Explorer
 First click on ***Options*** at the top. In this new window click ***Add*** in the top-middle of the window.
 
-What I've added there are two things so far.
-```
-Package.Object.Class.ValueResolverChain:ObjectProperty
-Package.Object.Class.BalancedItems:PointerProperty
-```
+What I've added there is listed at the very bottom of this site.
 
 How you get these? To be completely honest, I have no idea. :P
 
@@ -154,4 +150,9 @@ Package.Class.Manufacturers:PointerProperty
 Package.Class.WeaponAttributeEffects:PointerProperty
 Package.Class.ZoomWeaponAttributeEffects:PointerProperty
 Package.Class.AttributeSlotUpgrades:PointerProperty
+Package.Class.ConsolidatedAttributeInitData:PointerProperty
+Package.Class.MaterialPartData.WeightedParts:PointerProperty
+Package.Class.ConsolidatedAttributeInitData:PointerProperty
+Package.Class.MaterialPartData.WeightedParts:PointerProperty
+Package.Class.AttributeStartingValues:PointerProperty
 ```
