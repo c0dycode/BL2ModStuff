@@ -98,6 +98,8 @@ GameIsRunning:
 SetTimer, IsBorderlandsClosed, On
 
 F9::
+WinActivate, ahk_class LaunchUnrealUWindowsClient
+WinWaitActive, ahk_class LaunchUnrealUWindowsClient
 Sleep 150
 while (1)
     {    
@@ -119,10 +121,13 @@ while (1)
 WinActivate, ahk_class LaunchUnrealUWindowsClient
 WinWaitActive, ahk_class LaunchUnrealUWindowsClient
 Sleep, 150
-IfEqual, ConsoleKey, Tilde
-    Send, ~
-else
-    Send, {F6}
+IfEqual, Console, No
+    {
+        IfEqual, ConsoleKey, Tilde
+            Send, ~
+        else
+            Send, {F6}
+    }
 Sleep, 50
 SendRaw obj dump
 Send {Space}
