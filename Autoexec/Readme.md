@@ -6,7 +6,7 @@
 
 # Extra Features in the Tools-Version
 * Toggle RapidFire-Script with CTRL+F2
-* Hotkey (F9) to OBJ DUMP whatever you have in your clipboard (requires console on F6 for now)
+* Hotkey (F9) to OBJ DUMP whatever you have in your clipboard
 
 # Currently known issues | What's being worked on
 * Improved the RapidFire-Script even more.
@@ -35,7 +35,7 @@ You'll need the additional image-file though.
 4. It'll activate and focus the window for you. Tabbing out, if you're playing Exclusive Fullscreen, won't really work, since it'll monitor your screen for a specific area.
 5. It'll then search the upper right corner of the game-screen for the content in this picture ![BL2Check](./BL2Check.png)
 6. If it has found the area, it'll wait ***6000ms*** by default. This works out for me. Though BL2 is on an SSD. So you may have to change that in the ***Autoexec.ini***. 
-7. It'll then open up the Console by pressing ***F6*** and type ***exec patch.txt*** by default, press Enter and close the Console again. You won't even see it probably. All I see is my mouse-cursor all of a sudden :P. You can also change the patchname in the INI-file.
+7. It'll then open up the Console by pressing your COnsolekey and type ***exec patch.txt*** by default, press Enter and close the Console again. You won't even see it probably. All I see is my mouse-cursor all of a sudden :P. You can also change the patchname in the INI-file.
 8. It'll then close itself and DONE.
 
 # Installation
