@@ -75,17 +75,17 @@ else
 }
 
 RunAutoexec:
-WinActivate, ahk_class LaunchUnrealUWindowsClient
-WinWaitActive, ahk_class LaunchUnrealUWindowsClient
-WinShow, ahk_class LaunchUnrealUWindowsClient
+WinWait, ahk_class LaunchUnrealUWindowsClient,,2
+WinWaitClose, ahk_class LaunchUnrealUWindowsClient,,2
+WinWait, ahk_class LaunchUnrealUWindowsClient
 
-Sleep, 2000
 IfEqual, Hexedited, False
 {
-    DevCommands()
     ConsoleSay()
     UnlockSet()
+    DevCommands()
 }
+Sleep, 1000
 IfEqual, MenuScreen, 0
 {
     Loop{
