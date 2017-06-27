@@ -17,3 +17,13 @@ Chances are, this won't happen anytime soon, if at all -
 
 # Note
 If you have used previous versions, you probably need to increase the delay in the ini-file. Increasing it by 1500-2000 should give you pretty much the same result as before.
+
+
+# Changelog
+```Added new functions to automate the temporary patching the CE-Table from Magic_Gonads has done. This allows you to use the patches without haven to do any hex-editing. Thanks to Magic_Gonads for the idea and CE-Table :)
+```
+
+
+```Added the option to replace the Launcher.exe, which steam calls, even if you use the launchoption ***-NoLauncher*** 
+
+To use it, just rename your old Launcher.exe and rename this scripts exe to ***Launcher.exe***. This script will check if its own name is ***Launcher.exe*** to decide to either run ***Borderlands2.exe*** or the steam-link.```

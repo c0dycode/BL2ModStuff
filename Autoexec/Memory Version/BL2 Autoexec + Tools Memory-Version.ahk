@@ -1,4 +1,7 @@
 ;Made by c0dycode
+;TODO:
+;           - Read cli steam uses when using script as Launcher replacement
+;           - Could be a decent Linux alternative to AHK: http://www.semicomplete.com/projects/xdotool/xdotool.xhtml
 #Include <ClassMemory>
 #NoEnv
 #MaxHotkeysPerInterval 99000000
@@ -31,24 +34,38 @@ IfNotExist, Autoexec.ini
     IniWrite, patch.txt, Autoexec.ini, Settings, patchname
     IniWrite, 8000, Autoexec.ini, Settings, delay
     IniWrite, 20, Autoexec.ini, Settings, RapidFireDelay
+    IniWrite, None, Autoexec.ini, Settings, LaunchParameter
+    IniWrite, True, Autoexec.ini, Settings, Hexedited
 }
 IfExist, Autoexec.ini
 {
     IniRead, patchname, Autoexec.ini, Settings, patchname
     IniRead, delay, Autoexec.ini, Settings, delay, 8000
     IniRead, rapidfiredelay, Autoexec.ini, Settings, RapidFireDelay, 20
+    IniRead, LaunchParameter, Autoexec.ini, Settings, LaunchParameter
+    IniRead, Hexedited, Autoexec.ini, Settings, Hexedited, True
     IniRead, ConsoleKey, %A_MyDocuments%\My Games\Borderlands 2\WillowGame\Config\WillowInput.ini, Engine.Console, ConsoleKey
     
     IniWrite, %patchname%, Autoexec.ini, Settings, patchname
     IniWrite, %delay%, Autoexec.ini, Settings, delay
     IniWrite %rapidfiredelay%, Autoexec.ini, Settings, RapidFireDelay
+    IniWrite %LaunchParameter%, Autoexec.ini, Settings, LaunchParameter
+    IniWrite %Hexedited%, Autoexec.ini, Settings, Hexedited
 }
-
 Width := 1.15 * (A_ScreenWidth / 2) 
 Height := A_ScreenHeight / 3
 
+
 If !ProcessExist("Borderlands2.exe")
-    Run, steam://rungameid/49520
+{
+    IfEqual, A_ScriptName, Launcher.exe
+        IfEqual, LaunchParameter, None
+            Run, Borderlands2.exe
+        IfNotEqual, LaunchParameter, None
+            Run, Borderlands2.exe %LaunchParameter%
+    else
+        Run, steam://rungameid/49520
+}
 else
 {
     IfEqual, PatchExecuted, 0
@@ -61,6 +78,14 @@ RunAutoexec:
 WinActivate, ahk_class LaunchUnrealUWindowsClient
 WinWaitActive, ahk_class LaunchUnrealUWindowsClient
 WinShow, ahk_class LaunchUnrealUWindowsClient
+
+Sleep, 2000
+IfEqual, Hexedited, False
+{
+    DevCommands()
+    ConsoleSay()
+    UnlockSet()
+}
 IfEqual, MenuScreen, 0
 {
     Loop{
@@ -188,4 +213,53 @@ if !hProcessCopy
     msgbox failed to open a handle. Error Code = %hProcessCopy%
     
 global ConsoleStatus := mem.read(mem.BaseAddress + 0x01EABE70, "UInt", 0x5C8, 0x4A0, 0x44)
+}
+
+DevCommands(){
+if (_ClassMemory.__Class != "_ClassMemory")
+    msgbox class memory not correctly installed. Or the (global class) variable "_ClassMemory" has been overwritten
+
+mem := new _ClassMemory("ahk_exe Borderlands2.exe", "", hProcessCopy) 
+if !isObject(mem)
+    msgbox failed to open a handle
+if !hProcessCopy
+    msgbox failed to open a handle. Error Code = %hProcessCopy%
+
+pattern := mem.hexStringToPattern("58 01 04 28")
+devcommandsaddress := mem.processPatternScan(mem.BaseAddress,, pattern*)
+mem.write(devcommandsaddress, 654573912, type := "UInt")
+}
+
+ConsoleSay(){
+if (_ClassMemory.__Class != "_ClassMemory")
+    msgbox class memory not correctly installed. Or the (global class) variable "_ClassMemory" has been overwritten
+
+mem := new _ClassMemory("ahk_exe Borderlands2.exe", "PROCESS_ALL_ACCESS", hProcessCopy) 
+if !isObject(mem)
+    msgbox failed to open a handle
+if !hProcessCopy
+    msgbox failed to open a handle. Error Code = %hProcessCopy%
+
+pattern := mem.hexStringToPattern("?? 00 61 00 79 00 20 00 00 00 00 00")
+consayaddress := mem.processPatternScan(mem.BaseAddress,, pattern*)
+DllCall("VirtualProtectEx", "UInt", hProcessCopy, "UInt", consayaddress, "UInt", 4, "UInt", 0x04, "UInt *", 0) ; Makes Memoryregion writable
+mem.write(consayaddress, 0, type := "UInt")
+mem.write(consayaddress + 0x04, 2097152, type := "UInt")
+DllCall("VirtualProtectEx", "UInt", hProcessCopy, "UInt", consayaddress, "UInt", 4, "UInt", 0x02, "UInt *", 0) ; Memoryregion back to read-only
+}
+
+UnlockSet(){
+if (_ClassMemory.__Class != "_ClassMemory")
+    msgbox class memory not correctly installed. Or the (global class) variable "_ClassMemory" has been overwritten
+
+mem := new _ClassMemory("ahk_exe Borderlands2.exe", "", hProcessCopy) 
+if !isObject(mem)
+    msgbox failed to open a handle
+if !hProcessCopy
+    msgbox failed to open a handle. Error Code = %hProcessCopy%
+
+pattern := mem.hexStringToPattern("83 C4 0C 85 C0 75 1A 6A")
+unlocksetaddress := mem.processPatternScan(mem.BaseAddress,, pattern*)
+mem.write(unlocksetaddress, 2232206467, type := "UInt")
+mem.write(unlocksetaddress + 0x04, 1780119039, type := "UInt")
 }
