@@ -117,8 +117,8 @@ IfEqual, PatchExecuted, 0
 }
 PatchExecuted := 1
 
-;~ IfEqual, Bypass, True
-    ;~ SanityBypass()
+IfEqual, Bypass, True
+    SanityBypass()
 
 GameIsRunning:
 SetTimer, IsBorderlandsClosed, On
@@ -302,14 +302,22 @@ acc2bypass := mem.processPatternScan(mem.BaseAddress,, acc2pattern*)
 matbypass := mem.processPatternScan(mem.BaseAddress,, matpattern*)
 
 DllCall("VirtualProtectEx", "UInt", hProcessCopy, "UInt", bodybypass, "UInt",4, "UInt", 0x40, "UInt *", 0) ; PAGE_EXECUTE_READWRITE
+mem.write(bodybypass +  0x03, 255, type := "UChar")
 mem.write(bodybypass +  0x07, 117, type := "UChar")
+mem.write(gripbypass +  0x03, 255, type := "UChar")
 mem.write(gripbypass +  0x07, 117, type := "UChar")
+mem.write(barrelbypass +  0x03, 255, type := "UChar")
 mem.write(barrelbypass +  0x07, 117, type := "UChar")
+mem.write(sightbypass +  0x03, 255, type := "UChar")
 mem.write(sightbypass +  0x07, 117, type := "UChar")
+mem.write(stockbypass +  0x03, 255, type := "UChar")
 mem.write(stockbypass +  0x07, 117, type := "UChar")
 mem.write(elebypass +  0x07, 117, type := "UChar")
+mem.write(acc1bypass +  0x03, 255, type := "UChar")
 mem.write(acc1bypass +  0x07, 117, type := "UChar")
+mem.write(acc2bypass +  0x03, 255, type := "UChar")
 mem.write(acc2bypass +  0x07, 117, type := "UChar")
+mem.write(matbypass +  0x03, 255, type := "UChar")
 mem.write(matbypass +  0x07, 117, type := "UChar")
 DllCall("VirtualProtectEx", "UInt", hProcessCopy, "UInt", bodybypass, "UInt", 4, "UInt", 0x20, "UInt *", 0) ; PAGE_EXECUTE_READ
 }
