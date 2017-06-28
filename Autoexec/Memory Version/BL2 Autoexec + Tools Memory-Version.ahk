@@ -22,6 +22,11 @@ SetWorkingDir %A_ScriptDir%
 CoordMode, Pixel, Client
 SetTitleMatchMode, 3
 
+Loop, %0%  ; For each parameter
+{
+    launchparam .= %A_Index% " "  ; Get each launchparamter steam sends
+}
+
 RapidFire := 0
 PatchExecuted := 0
 MenuScreen := 0
@@ -34,7 +39,6 @@ IfNotExist, Autoexec.ini
     IniWrite, patch.txt, Autoexec.ini, Settings, patchname
     IniWrite, 8000, Autoexec.ini, Settings, delay
     IniWrite, 20, Autoexec.ini, Settings, RapidFireDelay
-    IniWrite, None, Autoexec.ini, Settings, LaunchParameter
     IniWrite, True, Autoexec.ini, Settings, Hexedited
 }
 IfExist, Autoexec.ini
@@ -42,14 +46,12 @@ IfExist, Autoexec.ini
     IniRead, patchname, Autoexec.ini, Settings, patchname
     IniRead, delay, Autoexec.ini, Settings, delay, 8000
     IniRead, rapidfiredelay, Autoexec.ini, Settings, RapidFireDelay, 20
-    IniRead, LaunchParameter, Autoexec.ini, Settings, LaunchParameter
     IniRead, Hexedited, Autoexec.ini, Settings, Hexedited, True
     IniRead, ConsoleKey, %A_MyDocuments%\My Games\Borderlands 2\WillowGame\Config\WillowInput.ini, Engine.Console, ConsoleKey
     
     IniWrite, %patchname%, Autoexec.ini, Settings, patchname
     IniWrite, %delay%, Autoexec.ini, Settings, delay
     IniWrite %rapidfiredelay%, Autoexec.ini, Settings, RapidFireDelay
-    IniWrite %LaunchParameter%, Autoexec.ini, Settings, LaunchParameter
     IniWrite %Hexedited%, Autoexec.ini, Settings, Hexedited
 }
 Width := 1.15 * (A_ScreenWidth / 2) 
@@ -59,10 +61,7 @@ Height := A_ScreenHeight / 3
 If !ProcessExist("Borderlands2.exe")
 {
     IfEqual, A_ScriptName, Launcher.exe
-        IfEqual, LaunchParameter, None
-            Run, Borderlands2.exe
-        IfNotEqual, LaunchParameter, None
-            Run, Borderlands2.exe %LaunchParameter%
+        Run, Borderlands2.exe %launchparam%
     else
         Run, steam://rungameid/49520
 }
@@ -85,7 +84,7 @@ IfEqual, Hexedited, False
     UnlockSet()
     DevCommands()
 }
-Sleep, 1000
+Sleep, 1500
 IfEqual, MenuScreen, 0
 {
     Loop{
