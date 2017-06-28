@@ -17,6 +17,8 @@ Use ***False*** if you haven't hex-edited your Borderlands2.exe. This will tempo
 ***Bypass=False***
 Set Bypass to ***True*** if you want to enable the Sanity-Check-Bypass.
 
+Note: Do NOT uncomment and sue the bypass yet. For some reason it'll delete ALL weapons, although it's just doing the exact same changes the CE-Table does.
+
 # Differences to the normal version
 This is basically just an alternative version.
 This one doesn't rely on finding the specific image anymore. Instead it reads the game processes memory to determine whether you're in the menu or not.
