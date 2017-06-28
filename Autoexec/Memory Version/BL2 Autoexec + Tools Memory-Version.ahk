@@ -74,10 +74,10 @@ else
 }
 
 RunAutoexec:
-WinWait, ahk_class LaunchUnrealUWindowsClient,,2
-WinWaitClose, ahk_class LaunchUnrealUWindowsClient,,2
+WinWait, ahk_class LaunchUnrealUWindowsClient,,3
+WinWaitClose, ahk_class LaunchUnrealUWindowsClient,,3
 WinWait, ahk_class LaunchUnrealUWindowsClient
-
+Sleep, 1000
 IfEqual, Hexedited, False
 {
     ConsoleSay()
@@ -143,7 +143,7 @@ WinActivate, ahk_class LaunchUnrealUWindowsClient
 WinWaitActive, ahk_class LaunchUnrealUWindowsClient
 Sleep, 150
 CheckConsole()
-Sleep, 150
+Sleep, 500
 IfEqual, ConsoleStatus, 0
     {
         IfEqual, ConsoleKey, Tilde
@@ -211,7 +211,7 @@ if !isObject(mem)
 if !hProcessCopy
     msgbox failed to open a handle. Error Code = %hProcessCopy%
     
-global ConsoleStatus := mem.read(mem.BaseAddress + 0x01EABE70, "UInt", 0x5C8, 0x4A0, 0x44)
+global ConsoleStatus := mem.read(mem.BaseAddress + 0x01EB5F70, "UInt", 0x310, 0x7B8, 0x3D0, 0xC, 0x56C)
 }
 
 DevCommands(){
@@ -227,13 +227,14 @@ if !hProcessCopy
 pattern := mem.hexStringToPattern("58 01 04 28")
 devcommandsaddress := mem.processPatternScan(mem.BaseAddress,, pattern*)
 mem.write(devcommandsaddress, 654573912, type := "UInt")
+;~ MsgBox, dev: %devcommandsaddress%
 }
 
 ConsoleSay(){
 if (_ClassMemory.__Class != "_ClassMemory")
     msgbox class memory not correctly installed. Or the (global class) variable "_ClassMemory" has been overwritten
 
-mem := new _ClassMemory("ahk_exe Borderlands2.exe", "PROCESS_ALL_ACCESS", hProcessCopy) 
+mem := new _ClassMemory("ahk_exe Borderlands2.exe", "", hProcessCopy) 
 if !isObject(mem)
     msgbox failed to open a handle
 if !hProcessCopy
@@ -245,6 +246,7 @@ DllCall("VirtualProtectEx", "UInt", hProcessCopy, "UInt", consayaddress, "UInt",
 mem.write(consayaddress, 0, type := "UInt")
 mem.write(consayaddress + 0x04, 2097152, type := "UInt")
 DllCall("VirtualProtectEx", "UInt", hProcessCopy, "UInt", consayaddress, "UInt", 4, "UInt", 0x02, "UInt *", 0) ; Memoryregion back to read-only
+;~ MsgBox, con: %consayaddress%
 }
 
 UnlockSet(){
@@ -261,4 +263,5 @@ pattern := mem.hexStringToPattern("83 C4 0C 85 C0 75 1A 6A")
 unlocksetaddress := mem.processPatternScan(mem.BaseAddress,, pattern*)
 mem.write(unlocksetaddress, 2232206467, type := "UInt")
 mem.write(unlocksetaddress + 0x04, 1780119039, type := "UInt")
+;~ MsgBox, set : %unlocksetaddress%
 }
