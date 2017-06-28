@@ -1,3 +1,22 @@
+# Available Settings explained
+***patchname=patch.txt***
+
+Patchfilename to autoexec
+
+***delay=8000***
+
+Delay to wait before autoexec the patch. To make sure everything is properly loaded before executing.
+
+***RapidFireDelay=20***
+
+Delay between clicks for the rapidfire-script. Using the script is not really recommended though.
+
+***Hexedited=False***
+Use ***False*** if you haven't hex-edited your Borderlands2.exe. This will temporarily patch the game when it's running.
+
+***Bypass=False***
+Set Bypass to ***True*** if you want to enable the Sanity-Check-Bypass.
+
 # Differences to the normal version
 This is basically just an alternative version.
 This one doesn't rely on finding the specific image anymore. Instead it reads the game processes memory to determine whether you're in the menu or not.
