@@ -117,8 +117,8 @@ IfEqual, PatchExecuted, 0
 }
 PatchExecuted := 1
 
-IfEqual, Bypass, True
-    SanityBypass()
+;~ IfEqual, Bypass, True
+    ;~ SanityBypass()
 
 GameIsRunning:
 SetTimer, IsBorderlandsClosed, On
