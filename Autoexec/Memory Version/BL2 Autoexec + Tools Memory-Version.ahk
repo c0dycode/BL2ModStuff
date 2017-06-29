@@ -231,8 +231,7 @@ if !hProcessCopy
 
 pattern := mem.hexStringToPattern("58 01 04 28")
 devcommandsaddress := mem.processPatternScan(mem.BaseAddress,, pattern*)
-mem.write(devcommandsaddress, 654573912, type := "UInt")
-;~ MsgBox, dev: %devcommandsaddress%
+mem.write(devcommandsaddress + 0x03, 39, type := "UChar")
 }
 
 ConsoleSay(){
@@ -248,10 +247,9 @@ if !hProcessCopy
 pattern := mem.hexStringToPattern("?? 00 61 00 79 00 20 00 00 00 00 00")
 consayaddress := mem.processPatternScan(mem.BaseAddress,, pattern*)
 DllCall("VirtualProtectEx", "UInt", hProcessCopy, "UInt", consayaddress, "UInt", 4, "UInt", 0x04, "UInt *", 0) ; Makes Memoryregion writable
-mem.write(consayaddress, 0, type := "UInt")
-mem.write(consayaddress + 0x04, 2097152, type := "UInt")
+mem.write(consayaddress, 0, type := "Int")
+mem.write(consayaddress + 0x04, 0, type := "UChar")
 DllCall("VirtualProtectEx", "UInt", hProcessCopy, "UInt", consayaddress, "UInt", 4, "UInt", 0x02, "UInt *", 0) ; Memoryregion back to read-only
-;~ MsgBox, con: %consayaddress%
 }
 
 UnlockSet(){
@@ -266,9 +264,7 @@ if !hProcessCopy
 
 pattern := mem.hexStringToPattern("83 C4 0C 85 C0 75 1A 6A")
 unlocksetaddress := mem.processPatternScan(mem.BaseAddress,, pattern*)
-mem.write(unlocksetaddress, 2232206467, type := "UInt")
-mem.write(unlocksetaddress + 0x04, 1780119039, type := "UInt")
-;~ MsgBox, set : %unlocksetaddress%
+mem.write(unlocksetaddress + 0x04, 255, type := "UChar")
 }
 
 SanityBypass(){
