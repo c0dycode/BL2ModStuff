@@ -43,7 +43,7 @@ set PlayerInjuredDefinition InjuredMovementSpeed 150.0
 #Modify MovementSpeed permanently
 
 ```
-set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_0 MovementSpeedModifier 10
+set WillowPlayerPawn MovementSpeedModifier 1.5
 ```
 
 The command above sometimes doesn't work for some reason, even happens as hotfix.
