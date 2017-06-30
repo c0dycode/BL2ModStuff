@@ -1,6 +1,5 @@
 ;Made by c0dycode
 ;TODO:
-;           - Read cli steam uses when using script as Launcher replacement
 ;           - Could be a decent Linux alternative to AHK: http://www.semicomplete.com/projects/xdotool/xdotool.xhtml
 #Include <ClassMemory>
 #NoEnv
@@ -57,6 +56,7 @@ IfExist, Autoexec.ini
     IniWrite %Hexedited%, Autoexec.ini, Settings, Hexedited
     IniWrite %Bypass%, Autoexec.ini, Settings, Bypass
 }
+
 Width := 1.15 * (A_ScreenWidth / 2) 
 Height := A_ScreenHeight / 3
 
@@ -76,15 +76,17 @@ else
 }
 
 RunAutoexec:
-WinWait, ahk_class LaunchUnrealUWindowsClient,,3
-WinWaitClose, ahk_class LaunchUnrealUWindowsClient,,3
+WinWait, ahk_class LaunchUnrealUWindowsClient,,5
+WinWaitClose, ahk_class LaunchUnrealUWindowsClient,,5
 WinWait, ahk_class LaunchUnrealUWindowsClient
 Sleep, 1000
 IfEqual, Hexedited, False
 {
+    Critical
     ConsoleSay()
     UnlockSet()
     DevCommands()
+    Critical, Off
 }
 Sleep, 1500
 IfEqual, MenuScreen, 0
@@ -146,10 +148,10 @@ return
 F9::
 WinActivate, ahk_class LaunchUnrealUWindowsClient
 WinWaitActive, ahk_class LaunchUnrealUWindowsClient
-Sleep, 150
+Sleep, 300
 CheckConsole()
-Sleep, 500
-IfEqual, ConsoleStatus, 0
+DllCall("Sleep",UInt,400)
+If ConsoleStatus in 0,4294967295
     {
         IfEqual, ConsoleKey, Tilde
             Send, ~
@@ -216,7 +218,8 @@ if !isObject(mem)
 if !hProcessCopy
     msgbox failed to open a handle. Error Code = %hProcessCopy%
     
-global ConsoleStatus := mem.read(mem.BaseAddress + 0x01EB5F70, "UInt", 0x310, 0x7B8, 0x3D0, 0xC, 0x56C)
+;~ global ConsoleStatus := mem.read(mem.BaseAddress + 0x01EE582C, "UInt", 0x10, 0x4B0, 0x374, 0x190, 0x6EC)
+global ConsoleStatus := mem.read(mem.BaseAddress + 0x01EAD74C, "UInt", 0x2F0, 0x304, 0x3D8, 0x24C, 0x56C)
 }
 
 DevCommands(){
