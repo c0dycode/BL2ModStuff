@@ -130,13 +130,11 @@ return
 F8::
 CheckConsole()
 Sleep, 150
-IfEqual, ConsoleStatus, 0
-    {
-        IfEqual, ConsoleKey, Tilde
-            Send, ~
-        else
-            Send, {F6}
-    }
+If conresult IN 0x0,0xFFFFFFFF
+    IfEqual, ConsoleKey, Tilde
+        Send, ~
+    else
+        Send, {F6}
 DllCall("Sleep",UInt,100)
 SendRaw getall WillowPopulationDefinition Name
 Send {Enter}
@@ -150,14 +148,12 @@ WinActivate, ahk_class LaunchUnrealUWindowsClient
 WinWaitActive, ahk_class LaunchUnrealUWindowsClient
 Sleep, 300
 CheckConsole()
-DllCall("Sleep",UInt,400)
-If ConsoleStatus in 0,4294967295
-    {
-        IfEqual, ConsoleKey, Tilde
-            Send, ~
-        else
-            Send, {F6}
-    }
+DllCall("Sleep",UInt,500)
+If conresult IN 0x0,0xFFFFFFFF
+    IfEqual, ConsoleKey, Tilde
+        Send, ~
+    else
+        Send, {F6}
 Sleep, 150
 SendRaw obj dump
 Send {Space}
@@ -217,9 +213,17 @@ if !isObject(mem)
     msgbox failed to open a handle
 if !hProcessCopy
     msgbox failed to open a handle. Error Code = %hProcessCopy%
+
+pattern := mem.hexStringToPattern("18 ?? ?? ?? 18 CA ?? 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 18 ?? ?? ?? ?? ?? ?? ?? ?? ?? 00 FF")
+SetFormat, IntegerFast, H
+consolestatusaddress := mem.processPatternScan(mem.BaseAddress,, pattern*)
+
+global conresult := mem.read(consolestatusaddress + 0x1C, type := "UInt")
+;~ IfEqual, result, 0xFFFFFFFF
+    ;~ MsgBox, Console hasn't been open/closed yet.
+;~ IfEqual, conresult, 0x200
+    ;~ MsgBox, Console is open!
     
-;~ global ConsoleStatus := mem.read(mem.BaseAddress + 0x01EE582C, "UInt", 0x10, 0x4B0, 0x374, 0x190, 0x6EC)
-global ConsoleStatus := mem.read(mem.BaseAddress + 0x01EAD74C, "UInt", 0x2F0, 0x304, 0x3D8, 0x24C, 0x56C)
 }
 
 DevCommands(){
