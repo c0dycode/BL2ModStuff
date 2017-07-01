@@ -223,7 +223,6 @@ global conresult := mem.read(consolestatusaddress + 0x1C, type := "UInt")
     ;~ MsgBox, Console hasn't been open/closed yet.
 ;~ IfEqual, conresult, 0x200
     ;~ MsgBox, Console is open!
-    
 }
 
 DevCommands(){
