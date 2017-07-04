@@ -24,11 +24,11 @@ To remove the limit itself
 
 Patch:
 ```
-7E 05 B9 64 00 00 00 3B  F9 0F 8D A6 00 00 00 6A
+7E 05 B9 64 00 00 00 3B F9 0F 8D A6 00 00 00 6A
 ```
 to
 ```
-75 05 B9 64 00 00 00 3B  F9 0F 8D A6 00 00 00 6A
+75 05 B9 64 00 00 00 3B F9 0F 8D A6 00 00 00 6A
 ```
 
 If you'd also like to remove the message ***... XY more elements***
