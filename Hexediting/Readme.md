@@ -41,3 +41,23 @@ to
 ```
 0F 85 7B 00 00 00 8B 8D 9C EE FF FF 83 C0 9D 50
 ```
+
+Here are a few things to test it with
+```
+obj dump GD_AttributePresentation._AttributeList.DefaultPresentationList
+obj dump Common_Materials.Creature.Master_CreatureShock
+obj dump Common_Materials.Creature.Master_CreatureSlag
+obj dump Common_Materials.Environment.Master_Barrel
+obj dump Common_Materials.Environment.Master_Rocks
+obj dump Common_Materials.Environment.Master_World
+obj dump Common_Materials.Environment.Master_WorldMasked
+obj dump Common_Materials.Items.Master_ClassMod_02
+obj dump Common_Materials.Items.Master_ShieldGrenade
+obj dump Common_Materials.Player.Master_Player
+obj dump Common_Materials.Weapons.Master_Gun
+obj dump FX_WEP_Scopes.Materials.Mat_Scope_Reticle_MS
+obj dump GD_AttributePresentation._AttributeList.DefaultPresentationList
+obj dump GD_CustomItemPools_MainGame.AllCustomizationsItemPool
+```
+
+Thanks to LightChaosman for telling me about this issue :D
