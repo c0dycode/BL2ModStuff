@@ -22,13 +22,13 @@ To remove this limit, we need to patch the Borderlands2.exe-file.
 
 To remove the limit itself
 
-Patch:
+Patch (this one also works for TPS:
 ```
-7E 05 B9 64 00 00 00 3B F9 0F 8D A6 00 00 00 6A
+7E 05 B9 64 00 00 00 3B F9 0F 8D
 ```
 to
 ```
-75 05 B9 64 00 00 00 3B F9 0F 8D A6 00 00 00 6A
+75 05 B9 64 00 00 00 3B F9 0F 8D
 ```
 
 If you'd also like to remove the message ***... XY more elements***
@@ -41,6 +41,20 @@ to
 ```
 0F 85 7B 00 00 00 8B 8D 9C EE FF FF 83 C0 9D 50
 ```
+
+
+# TPS Specific
+To remove the message mentioned above -
+patch:
+```
+7C 7B 8B 8D 94 EE FF FF
+```
+to
+```
+75 7B 8B 8D 94 EE FF FF
+```
+
+
 
 Here are a few things to test it with
 ```
