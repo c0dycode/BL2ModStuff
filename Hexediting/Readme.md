@@ -91,3 +91,5 @@ Find
  ```
 
  Replace the ***05*** with the value you want to increase the backpack-storage with (in HEX).
+
+ Note: I've had one crash when exiting to the menu. The game saved anyway, I bought more items afterwards, saved again with 43 items and it worked. No crashes after that. Could have had a different cause, but as a little sidenote :P
