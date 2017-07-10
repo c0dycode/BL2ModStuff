@@ -92,4 +92,8 @@ Find
 
  Replace the ***05*** with the value you want to increase the backpack-storage with (in HEX).
 
+The value you use instead of the ***05*** is added to that base-value in the game. So with all upgrades you have 39 slots. If you then use the ***05*** you'll now have 44 slots.
+
+Should you encounter the bug where you can't scroll anymore, I could fix it by either reopening the inventory or tabbing out and back into the game.
+
  Note: I've had one crash when exiting to the menu. The game saved anyway, I bought more items afterwards, saved again with 43 items and it worked. No crashes after that. Could have had a different cause, but as a little sidenote :P
