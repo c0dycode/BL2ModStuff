@@ -91,6 +91,12 @@ Find
  ```
 
  Replace the ***05*** with the value you want to increase the backpack-storage with (in HEX).
+***The maximum value you can use*** to increase your inventory slots, is ***7F***.
+7F = 127
+
+You can either use the Windows Calculator to convert from decimal to hex, or simply go to this site:
+
+http://www.rapidtables.com/convert/number/decimal-to-hex.htm
 
 The value you use instead of the ***05*** is added to that base-value in the game. So with all upgrades you have 39 slots. If you then use the ***05*** you'll now have 44 slots.
 
