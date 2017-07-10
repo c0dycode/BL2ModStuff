@@ -22,7 +22,7 @@ To remove this limit, we need to patch the Borderlands2.exe-file.
 
 To remove the limit itself
 
-Patch (this one also works for TPS:
+Patch (this one also works for TPS):
 ```
 7E 05 B9 64 00 00 00 3B F9 0F 8D
 ```
@@ -75,3 +75,19 @@ obj dump GD_CustomItemPools_MainGame.AllCustomizationsItemPool
 ```
 
 Thanks to LightChaosman for telling me about this issue :D
+
+
+# Increasing Backpack-Storage
+
+Find
+ ```
+ CC CC 8B 81 B8 01 00 00 C3 CC CC CC CC CC CC CC CC CC
+ ```
+
+ and replace with 
+
+ ```
+ CC CC 8B 81 B8 01 00 00 83 C0 05 C3 CC CC CC CC CC CC
+ ```
+
+ Replace the ***05*** with the value you want to increase the backpack-storage with (in HEX).
