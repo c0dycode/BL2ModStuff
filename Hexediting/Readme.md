@@ -113,6 +113,18 @@ To fix the side-effect noted above, here's a method that checks the amount of sl
 8B 81 B8 01 00 00 83 F8 27 7D 01 C3 83 C0 05 C3
 ```
 
+If you have done the first version-edit before, you'll need to "overwrite" it.
+That means:
+```
+CC CC 8B 81 B8 01 00 00 83 C0 05 C3 CC CC CC CC CC CC
+```
+
+will become
+
+```
+CC CC 8B 81 B8 01 00 00 83 F8 27 7D 01 C3 83 C0 05 C3
+```
+
 Again, replace the ***05*** with the amount of slots you want to get after reaching max slots. This won't make the Backpack-SDUs useless.
 
 Thanks to LightChaosman and MediEvilHero for pointing that out :)
