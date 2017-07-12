@@ -80,6 +80,7 @@ Thanks to LightChaosman for telling me about this issue :D
 # Increasing Backpack-Storage
 
 Find
+
  ```
  CC CC 8B 81 B8 01 00 00 C3 CC CC CC CC CC CC CC CC CC
  ```
@@ -102,4 +103,14 @@ The value you use instead of the ***05*** is added to that base-value in the gam
 
 Should you encounter the bug where you can't scroll anymore, I could fix it by either reopening the inventory or tabbing out and back into the game.
 
- Note: I've had one crash when exiting to the menu. The game saved anyway, I bought more items afterwards, saved again with 43 items and it worked. No crashes after that. Could have had a different cause, but as a little sidenote :P
+ Note: This will extend your inventoryslots by the given number each time you save and reload the game until you reach 39 slots + the given number.
+
+To fix the side-effect noted above, here's a method that checks the amount of slots. Once you've reached 39 slots, your backpackspace will increase by the given number.
+
+```
+8B 81 B8 01 00 00 83 F8 27 7D 01 C3 83 C0 05 C3
+```
+
+Again, replace the ***05*** with the amount of slots you want to get after reaching max slots. This won't make the Backpack-SDUs useless.
+
+Thanks to LightChaosman and MediEvilHero for pointing that out :)
