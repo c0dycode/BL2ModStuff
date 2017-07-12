@@ -118,4 +118,4 @@ Again, replace the ***05*** with the amount of slots you want to get after reach
 Thanks to LightChaosman and MediEvilHero for pointing that out :)
 
 # Bugreports
-- Orudeon told me he couldn't pickup anything although he had 14/23 backpackspace, when the Host didn't have the hexedit. This still needs confirmation, more testing though.
+- Orudeon told me he couldn't pickup anything although he had 14/23 backpackspace, when the Host didn't have the hexedit. This still needs confirmation, more testing though. (This was with the first version of the edit)
