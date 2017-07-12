@@ -116,3 +116,6 @@ To fix the side-effect noted above, here's a method that checks the amount of sl
 Again, replace the ***05*** with the amount of slots you want to get after reaching max slots. This won't make the Backpack-SDUs useless.
 
 Thanks to LightChaosman and MediEvilHero for pointing that out :)
+
+# Bugreports
+- Orudeon told me he couldn't pickup anything although he had 14/23 backpackspace, when the Host didn't have the hexedit. This still needs confirmation, more testing though.
