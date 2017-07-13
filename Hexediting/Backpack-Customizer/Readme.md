@@ -5,6 +5,10 @@ The same functionality will also be added to the FilterTool by LightChaosman.
 
 Note: Since this is an early version, make a backup of your exe, just in case ;)
 
+# Requirements
+Only requirement is the .NET Framework 4.0, which most people should already have installed anyway.
+If not, grab it here: https://www.microsoft.com/en-us/download/details.aspx?id=17851
+
 # How to use
 Just put ***both*** files into the same folder your Borderlands2.exe is in.
 Then open up the exe and then there are two possible Messages.
