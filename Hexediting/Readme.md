@@ -142,7 +142,8 @@ I'm not responsible for exploding friends or corrupting your/their savegames. ¯
 Things tested in multiplayer so far:
 - People can join you without the patch, and they will level too. If and what side-effects this has to their saves, no idea yet.
 
-- If you're above lvl 72, it looks like you can't join people anymore that don't have this patch applied. (Constantly sending character infos to the host)
+- If you're above lvl 72, it looks like you can't join people anymore that
+ don't have this patch applied. (Constantly sending character infos to the host)
 ```
 
 ![MaxLVL100](./images/MaxLVL100.png)
