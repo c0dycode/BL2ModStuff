@@ -131,3 +131,8 @@ Thanks to LightChaosman and MediEvilHero for pointing that out :)
 
 # Bugreports
 - Orudeon told me he couldn't pickup anything although he had 14/23 backpackspace, when the Host didn't have the hexedit. This still needs confirmation, more testing though. (This was with the first version of the edit)
+
+# Increasing Max Level
+![MaxLVL100](./images/MaxLVL100.png)
+
+![XPGainLvl72](./images/XPGainLvl72.png)
