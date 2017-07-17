@@ -133,6 +133,18 @@ Thanks to LightChaosman and MediEvilHero for pointing that out :)
 - Orudeon told me he couldn't pickup anything although he had 14/23 backpackspace, when the Host didn't have the hexedit. This still needs confirmation, more testing though. (This was with the first version of the edit)
 
 # Increasing Max Level
+
+```
+Very first testbuild to change max level up to 100.
+
+I'm not responsible for exploding friends or corrupting your/their savegames. ¯\_(ツ)_/¯
+
+Things tested in multiplayer so far:
+- People can join you without the patch, and they will level too. If and what side-effects this has to their saves, no idea yet.
+
+- If you're above lvl 72, it looks like you can't join people anymore that don't have this patch applied. (Constantly sending character infos to the host)
+```
+
 ![MaxLVL100](./images/MaxLVL100.png)
 
 ![XPGainLvl72](./images/XPGainLvl72.png)
