@@ -129,7 +129,7 @@ Again, replace the ***05*** with the amount of slots you want to get after reach
 
 Thanks to LightChaosman and MediEvilHero for pointing that out :)
 
-# Bugreports
+## Bugreports
 - Orudeon told me he couldn't pickup anything although he had 14/23 backpackspace, when the Host didn't have the hexedit. This still needs confirmation, more testing though. (This was with the first version of the edit)
 
 # Increasing Max Level
@@ -145,6 +145,25 @@ Things tested in multiplayer so far:
 
 - If you're above lvl 72, it looks like you can't join people anymore that
  don't have this patch applied. (Constantly sending character infos to the host)
+```
+
+# Instructions
+```
+Put in the Win32-folder where your Borderlands2.exe also is.
+***Backup your saves***, JIC.
+
+Backing up the exe should not be necessary, since the tool can ***Undo*** the changes.
+
+Again the Disclaimer:
+I'm not responsible for exploding friends or corrupting your/their savegames ¯\_(ツ)_/¯
+Or any issues caused by this patch, for that matter.
+```
+
+
+```
+Things tested in multiplayer so far:
+- People can join you without the patch, and they will level too. If and what side-effects this has to their saves, no idea yet.
+- If you're above lvl 72, it looks like you can't join people anymore that don't have this patch applied. (Constantly sending character infos to the host)
 ```
 
 ![MaxLVL100](./images/MaxLVL100.png)
