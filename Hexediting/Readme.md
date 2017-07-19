@@ -169,3 +169,40 @@ Things tested in multiplayer so far:
 ![MaxLVL100](./images/MaxLVL100.png)
 
 ![XPGainLvl72](./images/XPGainLvl72.png)
+
+
+# Increasing Max Eridium
+Find the following Array of bytes:
+```
+FF E0 F5 05 F4 01 00 00 E7 03 00 00 E7
+```
+
+To find the correct value you need to use, I highly recommend you use this site:
+
+https://www.darkfader.net/toolbox/convert/
+Scroll down to ***Integer, IPv4 address, color***
+
+The default maximum value is ***500***.
+So I'll show you an example with that value.
+
+![EridiumValue](./images/EridiumValue.png)
+
+Enter your preferred number in the upper ***decimal*** box. Marked in red.
+This results in the hexadecimal-value ***F4 01 00 00***, marked in green. We need to use the ***little-endian***-format.
+
+That's what we also find in the Array above.
+FF E0 F5 05 ***F4 01 00 00*** E7 03 00 00 E7
+
+That is the value you need to replace.
+
+For example:
+The decimal value ***750*** results in the hexadecimal-value ***EE 02 00 00***.
+
+So the final patch would be
+
+```
+FF E0 F5 05 EE 02 00 00 E7 03 00 00 E7
+```
+
+If you want the absolute maximum (2147483647),
+you'd have to use ***FF FF FF 7F***. These will not be displayed though. The UI will only show you 999, but you could check with Cheat Engine for example.
