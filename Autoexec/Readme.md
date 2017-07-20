@@ -8,13 +8,13 @@
 * Toggle RapidFire-Script with CTRL+F2
 * Hotkey (F9) to OBJ DUMP whatever you have in your clipboard
 
-# Currently known issues | What's being worked on
+## Currently known issues | What's being worked on
 * Improved the RapidFire-Script even more.
 * ~~The RapidFire-Script is a lot more usable now. While looking up similar issues, I've seen someone mention this exact same problem with BL2 or maybe even UE3 in general with AutoHotkey. So ther's a good chance this will be the best it'll be.~~
 * ~~Using the RapidFire-Script will make aiming harder since it's basically interrupting your mouse movement every X ms. Currently looking into that.~~
 
 
-# Introduction
+## Introduction
 Okay, I've written this little Autohotkey-Script to allow you to not having to type it manually in the console.
 
 This is NOT a timesaver and will not be, due to the time it takes when we can actually execute the patches.
@@ -27,7 +27,7 @@ I'll provide the Sourcecode for the ones that want to compile it themselves or f
 
 You'll need the additional image-file though.
 
-# What does it do?
+## What does it do?
 
 1. It checks if the ***Autoexec.ini*** is there already. If not, it'll create it and enter the default values. You can customize them afterwards however you want.
 2. It more or less calculates a fairly small area depending on your resolution. I'm using 1920x1080, so if you're having issues just hit me up, or edit the source code and run it yourself :)
@@ -38,7 +38,7 @@ You'll need the additional image-file though.
 7. It'll then open up the Console by pressing your COnsolekey and type ***exec patch.txt*** by default, press Enter and close the Console again. You won't even see it probably. All I see is my mouse-cursor all of a sudden :P. You can also change the patchname in the INI-file.
 8. It'll then close itself and DONE.
 
-# Installation
+## Installation
 Put it wherever you want.
 
 Now go here and listen to this soundclip I uploaded.
@@ -47,7 +47,7 @@ https://instaud.io/private/e479b3b9ebfee800a3594f912938c7954f46fc5e
 The last two seconds or so are the queue for me, where I can execute the patches. That's about the point where I won't get any errors.
 Execute the tool once, make sure BL2 is closed though, so you can adjust the delay properly, check what the console does and check if you've gotten any errors. If so, exit BL2 completely, raise the delay and try again.
 
-# Pre-Compiled and infos about it
+## Pre-Compiled and infos about it
 I'll put up the precompiled version. This includes the image-file(s) already and it'll be "extracted" out of the .exe-file during runtime. It'll stay there and should it be deleted, modified or whatever, it'll be overwritten again.
 
 Some people would sooner or later "discover" that the Description is not "Autohotkey" but "Chromeium" instead.
@@ -55,7 +55,7 @@ Some people would sooner or later "discover" that the Description is not "Autoho
 This is just a very cheap attempt to avoid ***very*** stupid anti-cheat tools lol.
 That's the only thing that differs from the official Autohotkey-version. Most "AutoHotkey"-references were just renamed to Chromeium.
 
-# Borderlands 2 Autoexec + Tools variant
+## Borderlands 2 Autoexec + Tools variant
 I've added this one now, since I thought it could make digging through stuff a little bit easier.
 
 Difference to the normal version is:

@@ -43,7 +43,7 @@ to
 ```
 
 
-# TPS Specific
+## TPS Specific
 To remove the message mentioned above -
 patch:
 ```
@@ -105,7 +105,7 @@ Should you encounter the bug where you can't scroll anymore, I could fix it by e
 
 ***Note***: This will extend your inventoryslots by the given number each time you save and reload the game until you reach 39 slots + the given number.
 
-# New method
+## New method
 
 To fix the side-effect noted above, here's a method that checks the amount of slots. Once you've reached 39 slots, your backpackspace will increase by the given number.
 
@@ -147,7 +147,7 @@ Things tested in multiplayer so far:
  don't have this patch applied. (Constantly sending character infos to the host)
 ```
 
-# Instructions
+## Instructions
 ```
 Put in the Win32-folder where your Borderlands2.exe also is.
 ***Backup your saves***, JIC.
