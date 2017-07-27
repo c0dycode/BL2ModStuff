@@ -134,6 +134,11 @@ Thanks to LightChaosman and MediEvilHero for pointing that out :)
 
 # Increasing Max Level
 
+## Newest Version 07-27-2017
+The newest version reduces the max level you can set to 92. That's because OP levels work again.
+
+Also enemies, item-/weapondrops and vendor-items scale now properly.
+
 ```
 Very first testbuild to change max level up to 100.
 
