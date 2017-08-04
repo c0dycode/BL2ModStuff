@@ -58,6 +58,8 @@ GD_Lilac_Psycho_Streaming.Pawn_Lilac_Psycho,MovementSpeedModifier 3.0
 GD_Soldier_Streaming.Pawn_Soldier,MovementSpeedModifier 3.0
 ```
 
+# Modify crouchspeed
+set Engine.CharacterClassDefinition CrouchedPct 0.5
 
 
 # Other general commands, useful to write down
