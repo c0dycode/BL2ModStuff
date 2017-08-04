@@ -62,7 +62,7 @@ GD_Soldier_Streaming.Pawn_Soldier,MovementSpeedModifier 3.0
 set Engine.CharacterClassDefinition CrouchedPct 0.5
 
 
-#Modify gained Experience
+# Modify gained Experience
 This one will let you instantly level from lvl 1 to 72 with only one kill. So look up default values and modify them as you wish.
 
 ```
