@@ -103,6 +103,16 @@ Command = "exec Spawn | exec lp"
 
 Press F8 in the game and the command will execute.
 
+##Note
+IF you want to bind it to numberkeys, you need to spell out the number and wrap it in ". For example:
+```
+Name = "eight",
+Command = ...
+```
+
+Thanks to "Reclaimer Shawn" for finding that out :)
+
+
 #### Note: This will only show the results in the log window. So either use the ***-log*** Launchparameter in steam, or enter ***showlog*** in the game console to toggle the log-window on and off.
 
 # Togglebinds
@@ -113,6 +123,20 @@ Instead of putting something onto your mouse or keyboard, you can aim at the cor
 
 To stop, just type in ***stopfire***.
 
+#Changing only a "nested" Property
 
+GD_AI_Balance.XP.XPMultiplier_02_Normal
 
-# More to be added
+```ValueFormula=(bEnabled=True,Multiplier=(BaseValueConstant=10.750000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),Level=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),Power=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),Offset=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000))
+```
+
+>set GD_AI_Balance.XP.XPMultiplier_02_Normal ValueFormula (Multiplier=(BaseValueConstant=10.750000))
+
+for example.
+
+# Getting global Properties
+```
+obj dump globals
+```
+
+Thanks to Jim Raven :)
