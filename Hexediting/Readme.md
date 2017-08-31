@@ -134,6 +134,8 @@ Thanks to LightChaosman and MediEvilHero for pointing that out :)
 
 # Increasing Max Level
 
+Thanks to Shadow for giving me a few important places that have been found before this patch existed, that eventually lead to me being able to find a working way to patch this!
+
 ## Newest Version 07-27-2017
 The newest version reduces the max level you can set to 92. That's because OP levels work again.
 
