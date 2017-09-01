@@ -41,6 +41,12 @@ Array-Limit Enabled = Default. The Limit is active!
 Array-Limit Disabled = The limit is removed!
 
 Changelog
+# v1.5
+```
+Fixed an issue regarding the Backpackpatch. This has not affected anyone, since it would only be an issue when you'd have done the latest
+backpack-patch manually. These instructions have not been public yet, so chances are basically 0% that you'd have been affected.
+```
+
 # v1.4
 ```
 Added patching for maximum Money, Seraph Crystals and Torque Tokens (all max out at 2147483647)
