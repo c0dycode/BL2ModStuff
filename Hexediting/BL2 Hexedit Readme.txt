@@ -41,6 +41,12 @@ Array-Limit Enabled = Default. The Limit is active!
 Array-Limit Disabled = The limit is removed!
 
 Changelog
+# v1.4
+```
+Added patching for maximum Money, Seraph Crystals and Torque Tokens (all max out at 2147483647)
+```
+
+
 # v1.3
 ```
 - Added automatic patch for the Array-Limit
