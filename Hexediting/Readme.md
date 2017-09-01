@@ -78,7 +78,31 @@ Thanks to LightChaosman for telling me about this issue :D
 
 
 # Increasing Backpack-Storage
+## Newest and best way
 
+Find
+```
+0C 00 00 00 EB 0A 83 F8
+```
+
+For ease of understanding, I'll call each pair of values a **block**.
+
+From the found **0C** we move 8 blocks forward. We should then be at **27**.
+This is the value of, what I call, the **Spacetrigger**.
+
+This determines if you currently have reached 39 (27 Hex is 39 decimal) Inventoryslots with bought SDUs.
+
+From here on, move 4 blocks forward again. You should be at another **27**.
+This will be your actual backpackspace, once you're at the **Spacetrigger** above.
+
+By default, you should have 
+```
+27 00 00 00
+```
+
+To get the value you need to write here, please refer to the steps below at the Eridium-Patch: https://github.com/c0dycode/BL2ModStuff/tree/master/Hexediting#increasing-max-eridium
+
+## Outdated
 Find
 
  ```
@@ -105,7 +129,7 @@ Should you encounter the bug where you can't scroll anymore, I could fix it by e
 
 ***Note***: This will extend your inventoryslots by the given number each time you save and reload the game until you reach 39 slots + the given number.
 
-## New method
+## New method (also Outdated)
 
 To fix the side-effect noted above, here's a method that checks the amount of slots. Once you've reached 39 slots, your backpackspace will increase by the given number.
 
