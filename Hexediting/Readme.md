@@ -79,6 +79,7 @@ Thanks to LightChaosman for telling me about this issue :D
 
 # Increasing Backpack-Storage
 ## Newest and best way
+Note: This will allow you to get up to 2147483647 inventoryspace. This will **NOT** be stable. From my testing, the game started to have issues with about 200.000 EMPTY slots. So - as always, use at your own risk.
 
 Find
 ```
