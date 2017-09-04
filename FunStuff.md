@@ -61,8 +61,7 @@ GD_Soldier_Streaming.Pawn_Soldier,MovementSpeedModifier 3.0
 # Modify crouchspeed
 set Engine.CharacterClassDefinition CrouchedPct 0.5
 
-
-#Modify gained Experience
+# Modify gained Experience
 This one will let you instantly level from lvl 1 to 72 with only one kill. So look up default values and modify them as you wish.
 
 ```
@@ -74,6 +73,11 @@ and this one as OnDemand Hotfix (Package = WillowGame)
 set WillowGame.WillowAIPawn ExperiencePointMultiplier 100000
 ```
 
+# Don't get killed when falling of the map
+```
+set PlayerKillVolume bKillPlayers False
+```
+
 
 # Other general commands, useful to write down
 
@@ -82,4 +86,8 @@ getall CustomizationData_Skin HeadMaterial
 getall CustomizationData_Skin BodyMaterial
 ```
 
+<<<<<<< HEAD
 Will give you the skin-objects currently loaded. When you play alone, this will only list your Head and Body for example.
+=======
+Will give you the skin-objects currently loaded. When you play alone, this will only list your Head and Body for example.
+>>>>>>> e40ba698673caa61c0805f41086e24a0f385291d
