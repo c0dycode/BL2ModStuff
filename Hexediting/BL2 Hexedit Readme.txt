@@ -41,6 +41,12 @@ Array-Limit Enabled = Default. The Limit is active!
 Array-Limit Disabled = The limit is removed!
 
 Changelog
+# v1.6
+```
+Swapped the UI to a Dark-Theme and cleaned up a few leftovers.
+No changes on any functionality
+```
+
 # v1.5
 ```
 Fixed an issue regarding the Backpackpatch. This has not affected anyone, since it would only be an issue when you'd have done the latest
