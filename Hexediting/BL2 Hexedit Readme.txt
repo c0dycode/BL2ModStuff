@@ -41,6 +41,13 @@ Array-Limit Enabled = Default. The Limit is active!
 Array-Limit Disabled = The limit is removed!
 
 Changelog
+# v1.7
+```
+Fixed a small issue that caused weird patching for currencies.
+Added a oneclick patch to use console, set-commands and change the ConsoleKey
+For future developers/contributors: Also added Fody.Costura and a simple Ini-Library via NuGet. (Sourcecode will be available soon :TM: )
+```
+
 # v1.6
 ```
 Swapped the UI to a Dark-Theme and cleaned up a few leftovers.
