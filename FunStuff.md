@@ -62,7 +62,7 @@ GD_Soldier_Streaming.Pawn_Soldier,MovementSpeedModifier 3.0
 set Engine.CharacterClassDefinition CrouchedPct 0.5
 
 # Modify gained Experience
-This one will let you instantly level from lvl 1 to 72 with only one kill. So look up default values and modify them as you wish.
+This one will let you instantly level from lvl 1 to 72 with only one kill.
 
 ```
 set globals BaseEnemyExperienceFormula (BaseValueConstant=100000)
@@ -71,6 +71,21 @@ set globals BaseEnemyExperienceFormula (BaseValueScaleConstant=100000000)
 and this one as OnDemand Hotfix (Package = WillowGame)
 
 set WillowGame.WillowAIPawn ExperiencePointMultiplier 100000
+```
+
+Default values are:
+```
+BaseEnemyExperienceFormula=(BaseValueConstant=0.000000,BaseValueAttribute=AttributeDefinition'GD_Balance_Experience.Attributes.Attribute_ExperienceMultiplier',InitializationDefinition=AttributeInitializationDefinition'GD_Balance_Experience.Formulas.Init_BaseEnemyExperience',BaseValueScaleConstant=1.000000)
+```
+&
+```
+ExperiencePointMultiplier=1.000000
+ExperiencePointMultiplierBaseValue=1.000000
+```
+
+# Extend Max Expvalue
+```
+set D_Resourcepools.PlayerPools.ExperiencePool BaseMaxValue (BaseValueConstant=200000000.0)
 ```
 
 # Don't get killed when falling of the map
@@ -86,8 +101,8 @@ getall CustomizationData_Skin HeadMaterial
 getall CustomizationData_Skin BodyMaterial
 ```
 
-<<<<<<< HEAD
+Head
 Will give you the skin-objects currently loaded. When you play alone, this will only list your Head and Body for example.
-=======
+
+Body
 Will give you the skin-objects currently loaded. When you play alone, this will only list your Head and Body for example.
->>>>>>> e40ba698673caa61c0805f41086e24a0f385291d
