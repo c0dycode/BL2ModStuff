@@ -40,7 +40,7 @@ set CharClass_Mercenary JumpZ 630.0
 set PlayerInjuredDefinition InjuredMovementSpeed 150.0
 ```
 
-#Modify MovementSpeed permanently
+# Modify MovementSpeed permanently
 
 ```
 set WillowPlayerPawn MovementSpeedModifier 1.5
