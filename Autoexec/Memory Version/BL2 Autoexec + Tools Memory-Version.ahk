@@ -219,10 +219,10 @@ SetFormat, IntegerFast, H
 consolestatusaddress := mem.processPatternScan(mem.BaseAddress,, pattern*)
 
 global conresult := mem.read(consolestatusaddress + 0x1C, type := "UInt")
-;~ IfEqual, result, 0xFFFFFFFF
-    ;~ MsgBox, Console hasn't been open/closed yet.
-;~ IfEqual, conresult, 0x200
-    ;~ MsgBox, Console is open!
+IfEqual, result, 0xFFFFFFFF
+    MsgBox, Console hasn't been open/closed yet.
+IfEqual, conresult, 0x200
+    MsgBox, Console is open!
 }
 
 DevCommands(){
