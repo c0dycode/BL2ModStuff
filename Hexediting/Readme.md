@@ -239,3 +239,24 @@ FF E0 F5 05 EE 02 00 00 E7 03 00 00 E7
 
 If you want the absolute maximum (2147483647),
 you'd have to use ***FF FF FF 7F***. These will not be displayed though. The UI will only show you 999, but you could check with Cheat Engine for example.
+
+
+# LINUX
+Open up the Borderlands2 file with which you open up the game (should be about 36MB in size) in a hexeditor!
+
+## Disable SanityChecks
+
+### Item SanityCheck-Bypass
+```
+E8 A9 24 17 00
+to
+90 90 90 90 90
+```
+
+### Weapon SanityCheck-Bypass
+```
+E8 F7 23 17 00
+also to
+90 90 90 90 90
+```
+
