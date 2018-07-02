@@ -1,3 +1,7 @@
+# !!!OUTDATED!!!
+Use this instead:
+https://github.com/c0dycode/BL-AutoexecDLL
+
 # General Features (both versions)
 * Automatically launch your Steamversion of Borderlands 2
 * Autoexec your patch-file (patch.txt by default)
