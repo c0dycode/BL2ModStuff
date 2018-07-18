@@ -1,3 +1,8 @@
+# Hex Multitool on this site is outdated!
+Use the Borderlands Hex Multitool from here instead:
+
+https://github.com/c0dycode/Borderlands-Hex-Multitool
+
 # Removing the 100 Element-limit
 
 Usually you'd only get up to 100 elements per Array.
